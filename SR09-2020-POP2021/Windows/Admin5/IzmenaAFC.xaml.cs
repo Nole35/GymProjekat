@@ -25,12 +25,12 @@ namespace SR09_2020_POP2021.Windows.Admin5
         {
             InitializeComponent();
             this.prosledjenFitnesCentar = fitnes;
-            txtNaziv.DataContext = fitnes;
+            txtNaz.DataContext = fitnes;
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            string naziv = txtNaziv.Text;
+            string naziv = txtNaz.Text;
 
 
             prosledjenFitnesCentar.Naziv = naziv;

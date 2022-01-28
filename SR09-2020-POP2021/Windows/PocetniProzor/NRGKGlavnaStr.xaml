@@ -1,4 +1,4 @@
-﻿<Window x:Class="SR09_2020_POP2021.Windows.PocetniProzor.InfoFitnesCentraWindow"
+﻿<Window x:Class="SR09_2020_POP2021.Windows.PocetniProzor.NRGKGlavnaStr"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
@@ -8,7 +8,7 @@
         Title="InfoFitnesCentraWindow" Height="450" Width="800">
     <Grid Margin="0,0,345.6,0">
         <Button Content="Lista instruktora" HorizontalAlignment="Left" Height="47" Margin="75,346,0,0" VerticalAlignment="Top" Width="225" Click="Button_Click"/>
-        <DataGrid Name="fitnesCentarPodaci" HorizontalAlignment="Left" Height="63" VerticalAlignment="Top" Width="390" Margin="36,114,0,0"/>
+        <DataGrid Name="OFitnesCentru" HorizontalAlignment="Left" Height="63" VerticalAlignment="Top" Width="390" Margin="36,114,0,0"/>
 
     </Grid>
 </Window>

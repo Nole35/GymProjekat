@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -27,22 +28,38 @@ namespace SR09_2020_POP2021.Windows.Admin5
             InitializeComponent();
             this.prosledjeniInstruktor = instruktor;
             txtIme.DataContext = instruktor;
-            txtPrezime.DataContext = instruktor;
+            txtPrez.DataContext = instruktor;
             txtEmail.DataContext = instruktor;
+            txtPass.DataContext = instruktor;
             cbPol.ItemsSource = Enum.GetValues(typeof(EPol)).Cast<EPol>();
+            string adrese = "select * from Adrese";
+            SqlConnection sqlCon = new SqlConnection(Utill.CONNECTION_STRING);
+            sqlCon.Open();
+            SqlCommand sqlCommand = new SqlCommand(adrese, sqlCon);
+            SqlDataReader sdr = sqlCommand.ExecuteReader();
+            while (sdr.Read())
+            {
+                cbAdrese.Items.Add(sdr[0]);
+            }
         }
+    
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             string ime = txtIme.Text;
-            string prezime = txtPrezime.Text;
+            string prezime = txtPrez.Text;
             string email = txtEmail.Text;
+            string lozinka = txtPass.Text;
             string polString = cbPol.SelectedItem.ToString();
             EPol pol = (EPol)Enum.Parse(typeof(EPol), polString, true);
+            string adresaString = cbAdrese.SelectedItem.ToString();
+            int adresaID = int.Parse(adresaString);
             prosledjeniInstruktor.Ime = ime;
             prosledjeniInstruktor.Prezime = prezime;
             prosledjeniInstruktor.Email = email;
+            prosledjeniInstruktor.Lozinka = lozinka;
             prosledjeniInstruktor.Pol = pol;
+            prosledjeniInstruktor.AdresaId = adresaID;
             Utill.Instance.updateInstruktor(prosledjeniInstruktor);
             MessageBox.Show("Izmena Uspesna");
             AInstruktoriWindow iaw = new AInstruktoriWindow();

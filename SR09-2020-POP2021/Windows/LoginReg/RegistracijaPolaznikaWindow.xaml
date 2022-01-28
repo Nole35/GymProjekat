@@ -11,7 +11,7 @@
             <Label Content="Ime:" HorizontalAlignment="Left" Height="30" Margin="75,33,0,0" VerticalAlignment="Top" Width="100"/>
             <TextBox Name="txtIme" HorizontalAlignment="Left" Height="30" Margin="180,33,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
             <Label Content="Pol:" HorizontalAlignment="Left" Height="30" Margin="75,206,0,0" VerticalAlignment="Top" Width="100"/>
-            <TextBox Name="txtPrezime" HorizontalAlignment="Left" Height="30" Margin="180,94,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+            <TextBox Name="txtPrez" HorizontalAlignment="Left" Height="30" Margin="180,94,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
             <Label Content="Prezime:" HorizontalAlignment="Left" Height="30" Margin="75,94,0,0" VerticalAlignment="Top" Width="100"/>
             <Label Content="JMBG:" HorizontalAlignment="Left" Height="30" Margin="75,147,0,0" VerticalAlignment="Top" Width="100"/>
             <TextBox Name="txtJMBG" HorizontalAlignment="Left" Height="30" Margin="180,147,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
@@ -19,16 +19,16 @@
             <Label Content="E-mail:" HorizontalAlignment="Left" Height="30" Margin="75,322,0,0" VerticalAlignment="Top" Width="100"/>
             <TextBox Name="txtEmail" HorizontalAlignment="Left" Height="30" Margin="180,322,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
             <Label Content="Lozinka:" HorizontalAlignment="Left" Height="30" Margin="75,372,0,0" VerticalAlignment="Top" Width="100"/>
-            <TextBox Name="txtLozinka" HorizontalAlignment="Left" Height="30" Margin="180,372,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+            <TextBox Name="txtLoz" HorizontalAlignment="Left" Height="30" Margin="180,372,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
             <ComboBox Name="cbPol" HorizontalAlignment="Left" Height="27" Margin="182,206,0,0" VerticalAlignment="Top" Width="118">
                 <ComboBoxItem Content="MUSKI"/>
                 <ComboBoxItem Content="ZENSKI"/>
             </ComboBox>
-            <ComboBox Name="cbAdrese"  HorizontalAlignment="Left" Height="22" Margin="180,280,0,0" VerticalAlignment="Top" Width="116"/>
+            <ComboBox Name="cbAdress"  HorizontalAlignment="Left" Height="22" Margin="180,280,0,0" VerticalAlignment="Top" Width="116"/>
 
         </Grid>
         <Button Content="REGISTRUJ" HorizontalAlignment="Left" VerticalAlignment="Top" Width="169" Margin="479,126,0,0" Height="56" Click="registracijaDugme"/>
-        <Button Content="CLOSE" HorizontalAlignment="Left" VerticalAlignment="Top" Width="169" Margin="479,290,0,0" Height="56" Click="close"/>
+        <Button Content="ZATVORI" HorizontalAlignment="Left" VerticalAlignment="Top" Width="169" Margin="479,290,0,0" Height="56" Click="close"/>
 
     </Grid>
 </Window>

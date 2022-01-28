@@ -11,11 +11,11 @@
         <Label Content="Broj" HorizontalAlignment="Left" VerticalAlignment="Top" Height="41" Width="133" Margin="43,110,0,0"/>
         <Label Content="Grad" HorizontalAlignment="Left" VerticalAlignment="Top" Height="41" Width="133" Margin="43,179,0,0" RenderTransformOrigin="0.571,2.813"/>
         <Label Content="Drzava" HorizontalAlignment="Left" VerticalAlignment="Top" Height="41" Width="133" Margin="43,254,0,0" RenderTransformOrigin="0.571,2.813"/>
-        <TextBox Text="{Binding Path=Ulica}" Name="txtUlica" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="176,41,0,0"/>
-        <TextBox Text="{Binding Path=Broj}" Name="txtBroj" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="176,114,0,0"/>
-        <TextBox Text="{Binding Path=Grad}" Name="txtGrad" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="176,179,0,0"/>
+        <TextBox Text="{Binding Path=Ulica}" Name="txtUl" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="176,41,0,0"/>
+        <TextBox Text="{Binding Path=Broj}" Name="txtBr" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="176,114,0,0"/>
+        <TextBox Text="{Binding Path=Grad}" Name="txtGr" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="176,179,0,0"/>
         <Button Content="IZMENI" HorizontalAlignment="Left" VerticalAlignment="Top" Width="95" Margin="334,349,0,0" Height="42" Click="Button_Click"/>
-        <TextBox Text="{Binding Path = Drzava}" x:Name="txtDrzava" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="176,254,0,0"/>
+        <TextBox Text="{Binding Path = Drzava}" x:Name="txtDrz" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="176,254,0,0"/>
 
     </Grid>
 </Window>

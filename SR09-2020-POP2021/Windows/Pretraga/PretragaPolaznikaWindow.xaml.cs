@@ -33,7 +33,7 @@ namespace SR09_2020_POP2021.Windows.Pretraga
             SqlDataReader sdr = sqlCommand.ExecuteReader();
             while (sdr.Read())
             {
-                cbAdresa.Items.Add(sdr[0]);
+                cbAdress.Items.Add(sdr[0]);
             }
         }
 
@@ -41,8 +41,8 @@ namespace SR09_2020_POP2021.Windows.Pretraga
         {
             Utill.Instance.CitanjeEntiteta();
             string ime = txtIme.Text;
-            string prezime = txtPrezime.Text;
-            string adresaString = cbAdresa.SelectedItem.ToString();
+            string prezime = txtPrez.Text;
+            string adresaString = cbAdress.SelectedItem.ToString();
             string email = txtEmail.Text;
             Adresa adresa = Utill.Instance.Adrese.ToList().Find(trazenjeAdrese => trazenjeAdrese.SifraAdrese.ToString().Equals(adresaString));
             ObservableCollection<Polaznik> polazniciLista = new ObservableCollection<Polaznik>();

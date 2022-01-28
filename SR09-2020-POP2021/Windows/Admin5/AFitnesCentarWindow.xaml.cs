@@ -27,10 +27,10 @@ namespace SR09_2020_POP2021.Windows.Admin5
             Utill.Instance.CitanjeEntiteta();
             ICollectionView view = CollectionViewSource.GetDefaultView(Utill.Instance.FitnesCentri);
 
-            Podaci.ItemsSource = view;
-            Podaci.IsSynchronizedWithCurrentItem = true;
+            Informacije.ItemsSource = view;
+            Informacije.IsSynchronizedWithCurrentItem = true;
 
-            Podaci.ColumnWidth = new DataGridLength(1, DataGridLengthUnitType.Star);
+            Informacije.ColumnWidth = new DataGridLength(1, DataGridLengthUnitType.Star);
 
         }
 
@@ -43,7 +43,7 @@ namespace SR09_2020_POP2021.Windows.Admin5
 
         private void obrisi(object sender, RoutedEventArgs e)
         {
-            var selektovaniFitnes = Podaci.SelectedItem;
+            var selektovaniFitnes = Informacije.SelectedItem;
             FitnesCentar fitnes = (FitnesCentar)selektovaniFitnes;
             Utill.Instance.DeleteFitnesCentar(fitnes.Sifra);
             Utill.Instance.FitnesCentri.Remove(fitnes);
@@ -51,7 +51,7 @@ namespace SR09_2020_POP2021.Windows.Admin5
 
         private void izmeni(object sender, RoutedEventArgs e)
         {
-            var selektovanFitnes = Podaci.SelectedItem;
+            var selektovanFitnes = Informacije.SelectedItem;
             FitnesCentar fitnes = (FitnesCentar)selektovanFitnes;
             IzmenaAFC ipfc = new IzmenaAFC(fitnes);
             ipfc.Show();

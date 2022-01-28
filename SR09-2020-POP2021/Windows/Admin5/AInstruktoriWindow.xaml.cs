@@ -28,10 +28,10 @@ namespace SR09_2020_POP2021.Windows.Admin5
             Utill.Instance.CitanjeEntiteta();
             ICollectionView view = CollectionViewSource.GetDefaultView(Utill.Instance.Instruktori);
 
-            Podaci.ItemsSource = view;
-            Podaci.IsSynchronizedWithCurrentItem = true;
+            Informacije.ItemsSource = view;
+            Informacije.IsSynchronizedWithCurrentItem = true;
 
-            Podaci.ColumnWidth = new DataGridLength(1, DataGridLengthUnitType.Star);
+            Informacije.ColumnWidth = new DataGridLength(1, DataGridLengthUnitType.Star);
         }
         private void dodaj(object sender, RoutedEventArgs e)
         {
@@ -42,7 +42,7 @@ namespace SR09_2020_POP2021.Windows.Admin5
 
         private void obrisi(object sender, RoutedEventArgs e)
         {
-            var selektovaniInstruktor = Podaci.SelectedItem;
+            var selektovaniInstruktor = Informacije.SelectedItem;
             Instruktor instruktor = (Instruktor)selektovaniInstruktor;
             Utill.Instance.DeleteInstruktor(instruktor.Id);
             Utill.Instance.Instruktori.Remove(instruktor);
@@ -50,7 +50,7 @@ namespace SR09_2020_POP2021.Windows.Admin5
 
         private void izmeni(object sender, RoutedEventArgs e)
         {
-            var selektovaniInstruktor = Podaci.SelectedItem;
+            var selektovaniInstruktor = Informacije.SelectedItem;
             Instruktor instruktor = (Instruktor)selektovaniInstruktor;
             IzmenaAInstruktora izmeni = new IzmenaAInstruktora(instruktor);
             izmeni.Show();

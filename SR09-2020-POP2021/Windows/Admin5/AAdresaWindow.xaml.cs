@@ -28,10 +28,10 @@ namespace SR09_2020_POP2021.Windows.Admin5
             Utill.Instance.CitanjeEntiteta();
             ICollectionView view = CollectionViewSource.GetDefaultView(Utill.Instance.Adrese);
 
-            Podaci.ItemsSource = view;
-            Podaci.IsSynchronizedWithCurrentItem = true;
+            Informacije.ItemsSource = view;
+            Informacije.IsSynchronizedWithCurrentItem = true;
 
-            Podaci.ColumnWidth = new DataGridLength(1, DataGridLengthUnitType.Star);
+            Informacije.ColumnWidth = new DataGridLength(1, DataGridLengthUnitType.Star);
         }
 
 
@@ -44,7 +44,7 @@ namespace SR09_2020_POP2021.Windows.Admin5
 
         private void obrisi(object sender, RoutedEventArgs e)
         {
-            var selektovanaAdresa = Podaci.SelectedItem;
+            var selektovanaAdresa = Informacije.SelectedItem;
             Adresa adresa = (Adresa)selektovanaAdresa;
             Utill.Instance.DeleteAdresa(adresa.SifraAdrese);
             Utill.Instance.Adrese.Remove(adresa);
@@ -52,7 +52,7 @@ namespace SR09_2020_POP2021.Windows.Admin5
 
         private void izmeni(object sender, RoutedEventArgs e)
         {
-            var selektovanaAdresa = Podaci.SelectedItem;
+            var selektovanaAdresa = Informacije.SelectedItem;
             Adresa adresa = (Adresa)selektovanaAdresa;
             IzmenaAAdrese izmeni = new IzmenaAAdrese(adresa);
             izmeni.Show();

@@ -97,6 +97,17 @@ namespace SR09_2020_POP2021.Model
 
         }
 
-
+        public Trening() { }
+        public Trening(int sifra, DateTime datumTreninga, int vremeTreninga, int trajanjeTreninga, EStatus status, int instruktorId, int polaznikId, bool aktivan)
+        {
+            this.sifra = sifra;
+            this.datumTreninga = datumTreninga;
+            this.vremeTreninga = vremeTreninga;
+            this.trajanjeTreninga = trajanjeTreninga;
+            this.status = status;
+            this.instruktorId = instruktorId;
+            this.polaznikId = polaznikId;
+            this.aktivan = aktivan;
+        }
     }
 }

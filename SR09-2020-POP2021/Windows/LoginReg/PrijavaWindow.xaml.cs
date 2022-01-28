@@ -39,21 +39,21 @@ namespace SR09_2020_POP2021.Windows.LoginReg
                 string admin = "SELECT COUNT(1) FROM Administrator WHERE jmbg=@jmbg AND lozinka=@lozinka and aktivan=1";
                 SqlCommand sqlcommandAdmin = new SqlCommand(admin, sqlCon);
                 sqlcommandAdmin.CommandType = System.Data.CommandType.Text;
-                sqlcommandAdmin.Parameters.AddWithValue("@jmbg", txtUsername.Text);
+                sqlcommandAdmin.Parameters.AddWithValue("@jmbg", txtMaticni.Text);
                 sqlcommandAdmin.Parameters.AddWithValue("@lozinka", txtPassword.Password);
                 int countAdmin = (int)sqlcommandAdmin.ExecuteScalar();
 
                 string instruktor = "SELECT COUNT(1) FROM Instruktori WHERE jmbg=@jmbg AND lozinka=@lozinka and aktivan=1";
                 SqlCommand sqlcommandInstrukotr = new SqlCommand(instruktor, sqlCon);
                 sqlcommandInstrukotr.CommandType = System.Data.CommandType.Text;
-                sqlcommandInstrukotr.Parameters.AddWithValue("@jmbg", txtUsername.Text);
+                sqlcommandInstrukotr.Parameters.AddWithValue("@jmbg", txtMaticni.Text);
                 sqlcommandInstrukotr.Parameters.AddWithValue("@lozinka", txtPassword.Password);
                 int countInstruktor = (int)sqlcommandInstrukotr.ExecuteScalar();
 
                 string polaznik = "SELECT COUNT(1) FROM Polaznici WHERE jmbg=@jmbg AND lozinka=@lozinka and aktivan=1";
                 SqlCommand sqlcommandPolaznik = new SqlCommand(polaznik, sqlCon);
                 sqlcommandPolaznik.CommandType = System.Data.CommandType.Text;
-                sqlcommandPolaznik.Parameters.AddWithValue("@jmbg", txtUsername.Text);
+                sqlcommandPolaznik.Parameters.AddWithValue("@jmbg", txtMaticni.Text);
                 sqlcommandPolaznik.Parameters.AddWithValue("@lozinka", txtPassword.Password);
 
                 int countPolaznik = (int)sqlcommandPolaznik.ExecuteScalar();
@@ -61,19 +61,19 @@ namespace SR09_2020_POP2021.Windows.LoginReg
 
                 if (countAdmin > 0)
                 {
-                    AdminWindow adminProzor = new AdminWindow(txtUsername.Text);
+                    AdminWindow adminProzor = new AdminWindow(txtMaticni.Text);
                     adminProzor.Show();
                     this.Close();
                 }
                 else if (countInstruktor > 0)
                 {
-                    InstruktorWindow instProzor = new InstruktorWindow(txtUsername.Text);
+                    InstruktorWindow instProzor = new InstruktorWindow(txtMaticni.Text);
                     instProzor.Show();
                     this.Close();
                 }
                 else if (countPolaznik > 0)
                 {
-                    PolaznikWindow polaznikProzor = new PolaznikWindow(txtUsername.Text);
+                    PolaznikWindow polaznikProzor = new PolaznikWindow(txtMaticni.Text);
                     polaznikProzor.Show();
                     this.Close();
                 }

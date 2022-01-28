@@ -25,18 +25,18 @@ namespace SR09_2020_POP2021.Windows.Admin5
         {
             InitializeComponent();
             this.prosledjenaAdresa = adresa;
-            txtUlica.DataContext = adresa;
-            txtBroj.DataContext = adresa;
-            txtGrad.DataContext = adresa;
-            txtDrzava.DataContext = adresa;
+            txtUl.DataContext = adresa;
+            txtBr.DataContext = adresa;
+            txtGr.DataContext = adresa;
+            txtDrz.DataContext = adresa;
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            string ulica = txtUlica.Text;
-            string broj = txtBroj.Text;
-            string grad = txtGrad.Text;
-            string drzava = txtDrzava.Text;
+            string ulica = txtUl.Text;
+            string broj = txtBr.Text;
+            string grad = txtGr.Text;
+            string drzava = txtDrz.Text;
 
             prosledjenaAdresa.Ulica = ulica;
             prosledjenaAdresa.Broj = broj;

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SR09_2020_POP2021.Windows.PregledIzmenaSPodataka;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -33,7 +34,9 @@ namespace SR09_2020_POP2021.Windows.Instructors
 
         private void pregledPodataka(object sender, RoutedEventArgs e)
         {
-
+            PregledPodInstruktora ppi = new PregledPodInstruktora(prosledjeniJmbg);
+            ppi.Show();
+            this.Close();
         }
 
         private void pregledTreninga(object sender, RoutedEventArgs e)

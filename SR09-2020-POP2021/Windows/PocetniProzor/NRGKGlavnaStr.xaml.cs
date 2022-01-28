@@ -17,25 +17,30 @@ using SR09_2020_POP2021.Model;
 namespace SR09_2020_POP2021.Windows.PocetniProzor
 {
 
-    public partial class InfoFitnesCentraWindow : Window
+    public partial class NRGKGlavnaStr : Window
     {
-        public InfoFitnesCentraWindow()
+        public NRGKGlavnaStr()
         {
             InitializeComponent();
             Utill.Instance.CitanjeEntiteta();
             ICollectionView view = CollectionViewSource.GetDefaultView(Utill.Instance.FitnesCentri);
 
-            fitnesCentarPodaci.ItemsSource = view;
-            fitnesCentarPodaci.IsSynchronizedWithCurrentItem = true;
+            OFitnesCentru.ItemsSource = view;
+            OFitnesCentru.IsSynchronizedWithCurrentItem = true;
 
-            fitnesCentarPodaci.ColumnWidth = new DataGridLength(1, DataGridLengthUnitType.Star);
+            OFitnesCentru.ColumnWidth = new DataGridLength(1, DataGridLengthUnitType.Star);
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            NInstruktoriWindow niw = new NInstruktoriWindow();
-            niw.Show();
+            NRGKInstruktori nrgkp = new NRGKInstruktori();
+            nrgkp.Show();
             this.Close();
+        }
+
+        private void OFitnesCentru_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
         }
     }
 }

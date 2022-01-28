@@ -16,9 +16,6 @@ C:\Users\Nole\Downloads\SR09-2020-POP2021\SR09-2020-POP2021\obj\Debug\SR09-2020-
 C:\Users\Nole\Downloads\SR09-2020-POP2021\SR09-2020-POP2021\obj\Debug\Windows\Admin5\AdminWindow.g.cs
 C:\Users\Nole\Downloads\SR09-2020-POP2021\SR09-2020-POP2021\obj\Debug\Windows\Instructors\InstruktorWindow.g.cs
 C:\Users\Nole\Downloads\SR09-2020-POP2021\SR09-2020-POP2021\obj\Debug\Windows\LoginReg\PrijavaWindow.g.cs
-C:\Users\Nole\Downloads\SR09-2020-POP2021\SR09-2020-POP2021\obj\Debug\Windows\PocetniProzor\FitnesCentarWindow.g.cs
-C:\Users\Nole\Downloads\SR09-2020-POP2021\SR09-2020-POP2021\obj\Debug\Windows\PocetniProzor\InfoFitnesCentraWindow.g.cs
-C:\Users\Nole\Downloads\SR09-2020-POP2021\SR09-2020-POP2021\obj\Debug\Windows\PocetniProzor\NInstruktoriWindow.g.cs
 C:\Users\Nole\Downloads\SR09-2020-POP2021\SR09-2020-POP2021\obj\Debug\Windows\PregledIzmenaSPodataka\IzmeniPodatke.g.cs
 C:\Users\Nole\Downloads\SR09-2020-POP2021\SR09-2020-POP2021\obj\Debug\Windows\PregledIzmenaSPodataka\PregledPodataka.g.cs
 C:\Users\Nole\Downloads\SR09-2020-POP2021\SR09-2020-POP2021\obj\Debug\Windows\Pretraga\PretragaInstruktoraWindow.g.cs
@@ -27,9 +24,6 @@ C:\Users\Nole\Downloads\SR09-2020-POP2021\SR09-2020-POP2021\obj\Debug\Windows\Po
 C:\Users\Nole\Downloads\SR09-2020-POP2021\SR09-2020-POP2021\obj\Debug\Windows\Admin5\AdminWindow.baml
 C:\Users\Nole\Downloads\SR09-2020-POP2021\SR09-2020-POP2021\obj\Debug\Windows\Instructors\InstruktorWindow.baml
 C:\Users\Nole\Downloads\SR09-2020-POP2021\SR09-2020-POP2021\obj\Debug\Windows\LoginReg\PrijavaWindow.baml
-C:\Users\Nole\Downloads\SR09-2020-POP2021\SR09-2020-POP2021\obj\Debug\Windows\PocetniProzor\FitnesCentarWindow.baml
-C:\Users\Nole\Downloads\SR09-2020-POP2021\SR09-2020-POP2021\obj\Debug\Windows\PocetniProzor\InfoFitnesCentraWindow.baml
-C:\Users\Nole\Downloads\SR09-2020-POP2021\SR09-2020-POP2021\obj\Debug\Windows\PocetniProzor\NInstruktoriWindow.baml
 C:\Users\Nole\Downloads\SR09-2020-POP2021\SR09-2020-POP2021\obj\Debug\Windows\PolaznikProzoris\PolaznikWindow.baml
 C:\Users\Nole\Downloads\SR09-2020-POP2021\SR09-2020-POP2021\obj\Debug\Windows\PregledIzmenaSPodataka\IzmeniPodatke.baml
 C:\Users\Nole\Downloads\SR09-2020-POP2021\SR09-2020-POP2021\obj\Debug\Windows\PregledIzmenaSPodataka\PregledPodataka.baml
@@ -75,3 +69,9 @@ C:\Users\Nole\Downloads\SR09-2020-POP2021\SR09-2020-POP2021\obj\Debug\Windows\Ad
 C:\Users\Nole\Downloads\SR09-2020-POP2021\SR09-2020-POP2021\obj\Debug\Windows\Admin5\DodavanjePolaznika.baml
 C:\Users\Nole\Downloads\SR09-2020-POP2021\SR09-2020-POP2021\obj\Debug\Windows\Admin5\DodavanjeFitnesCentra.g.cs
 C:\Users\Nole\Downloads\SR09-2020-POP2021\SR09-2020-POP2021\obj\Debug\Windows\Admin5\DodavanjeFitnesCentra.baml
+C:\Users\Nole\Downloads\SR09-2020-POP2021\SR09-2020-POP2021\obj\Debug\Windows\PocetniProzor\FitnesCentarSajt.g.cs
+C:\Users\Nole\Downloads\SR09-2020-POP2021\SR09-2020-POP2021\obj\Debug\Windows\PocetniProzor\NRGKGlavnaStr.g.cs
+C:\Users\Nole\Downloads\SR09-2020-POP2021\SR09-2020-POP2021\obj\Debug\Windows\PocetniProzor\NRGKInstruktori.g.cs
+C:\Users\Nole\Downloads\SR09-2020-POP2021\SR09-2020-POP2021\obj\Debug\Windows\PocetniProzor\FitnesCentarSajt.baml
+C:\Users\Nole\Downloads\SR09-2020-POP2021\SR09-2020-POP2021\obj\Debug\Windows\PocetniProzor\NRGKGlavnaStr.baml
+C:\Users\Nole\Downloads\SR09-2020-POP2021\SR09-2020-POP2021\obj\Debug\Windows\PocetniProzor\NRGKInstruktori.baml

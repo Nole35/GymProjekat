@@ -7,6 +7,10 @@ FC:\Users\Nole\Downloads\SR09-2020-POP2021\SR09-2020-POP2021\Windows\Admin5\AFit
 FC:\Users\Nole\Downloads\SR09-2020-POP2021\SR09-2020-POP2021\Windows\Admin5\AInstruktoriWindow.xaml;;
 FC:\Users\Nole\Downloads\SR09-2020-POP2021\SR09-2020-POP2021\Windows\Admin5\APolazniciWindow.xaml;;
 FC:\Users\Nole\Downloads\SR09-2020-POP2021\SR09-2020-POP2021\Windows\Admin5\ATreninziWindow.xaml;;
+FC:\Users\Nole\Downloads\SR09-2020-POP2021\SR09-2020-POP2021\Windows\Admin5\DodavanjeAdrese.xaml;;
+FC:\Users\Nole\Downloads\SR09-2020-POP2021\SR09-2020-POP2021\Windows\Admin5\DodavanjeFitnesCentra.xaml;;
+FC:\Users\Nole\Downloads\SR09-2020-POP2021\SR09-2020-POP2021\Windows\Admin5\DodavanjeInstruktora.xaml;;
+FC:\Users\Nole\Downloads\SR09-2020-POP2021\SR09-2020-POP2021\Windows\Admin5\DodavanjePolaznika.xaml;;
 FC:\Users\Nole\Downloads\SR09-2020-POP2021\SR09-2020-POP2021\Windows\Admin5\IzmenaAAdrese.xaml;;
 FC:\Users\Nole\Downloads\SR09-2020-POP2021\SR09-2020-POP2021\Windows\Admin5\IzmenaAFC.xaml;;
 FC:\Users\Nole\Downloads\SR09-2020-POP2021\SR09-2020-POP2021\Windows\Admin5\IzmenaAInstruktora.xaml;;
@@ -14,9 +18,9 @@ FC:\Users\Nole\Downloads\SR09-2020-POP2021\SR09-2020-POP2021\Windows\Admin5\Izme
 FC:\Users\Nole\Downloads\SR09-2020-POP2021\SR09-2020-POP2021\Windows\Instructors\InstruktorWindow.xaml;;
 FC:\Users\Nole\Downloads\SR09-2020-POP2021\SR09-2020-POP2021\Windows\LoginReg\PrijavaWindow.xaml;;
 FC:\Users\Nole\Downloads\SR09-2020-POP2021\SR09-2020-POP2021\Windows\LoginReg\RegistracijaPolaznikaWindow.xaml;;
-FC:\Users\Nole\Downloads\SR09-2020-POP2021\SR09-2020-POP2021\Windows\PocetniProzor\FitnesCentarWindow.xaml;;
-FC:\Users\Nole\Downloads\SR09-2020-POP2021\SR09-2020-POP2021\Windows\PocetniProzor\InfoFitnesCentraWindow.xaml;;
-FC:\Users\Nole\Downloads\SR09-2020-POP2021\SR09-2020-POP2021\Windows\PocetniProzor\NInstruktoriWindow.xaml;;
+FC:\Users\Nole\Downloads\SR09-2020-POP2021\SR09-2020-POP2021\Windows\PocetniProzor\FitnesCentarSajt.xaml;;
+FC:\Users\Nole\Downloads\SR09-2020-POP2021\SR09-2020-POP2021\Windows\PocetniProzor\NRGKGlavnaStr.xaml;;
+FC:\Users\Nole\Downloads\SR09-2020-POP2021\SR09-2020-POP2021\Windows\PocetniProzor\NRGKInstruktori.xaml;;
 FC:\Users\Nole\Downloads\SR09-2020-POP2021\SR09-2020-POP2021\Windows\PolaznikProzoris\PolaznikWindow.xaml;;
 FC:\Users\Nole\Downloads\SR09-2020-POP2021\SR09-2020-POP2021\Windows\PregledIzmenaSPodataka\IzmenaPodInstruktora.xaml;;
 FC:\Users\Nole\Downloads\SR09-2020-POP2021\SR09-2020-POP2021\Windows\PregledIzmenaSPodataka\IzmenaPodPolaznika.xaml;;
@@ -28,8 +32,4 @@ FC:\Users\Nole\Downloads\SR09-2020-POP2021\SR09-2020-POP2021\Windows\Pretraga\Pr
 FC:\Users\Nole\Downloads\SR09-2020-POP2021\SR09-2020-POP2021\Windows\Pretraga\PretragaPolaznikaWindow.xaml;;
 FC:\Users\Nole\Downloads\SR09-2020-POP2021\SR09-2020-POP2021\Windows\Pretraga\PrikazPretragePolaznika.xaml;;
 FC:\Users\Nole\Downloads\SR09-2020-POP2021\SR09-2020-POP2021\Windows\Pretraga\PrikazRezultataPretrage.xaml;;
-FC:\Users\Nole\Downloads\SR09-2020-POP2021\SR09-2020-POP2021\Windows\Admin5\DodavanjeAdrese.xaml;;
-FC:\Users\Nole\Downloads\SR09-2020-POP2021\SR09-2020-POP2021\Windows\Admin5\DodavanjeInstruktora.xaml;;
-FC:\Users\Nole\Downloads\SR09-2020-POP2021\SR09-2020-POP2021\Windows\Admin5\DodavanjePolaznika.xaml;;
-FC:\Users\Nole\Downloads\SR09-2020-POP2021\SR09-2020-POP2021\Windows\Admin5\DodavanjeFitnesCentra.xaml;;
 

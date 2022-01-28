@@ -30,20 +30,20 @@ public partial class DodavanjePolaznika : Window
         SqlDataReader sdr = sqlCommand.ExecuteReader();
         while (sdr.Read())
         {
-            cbAdrese.Items.Add(sdr[0]);
+            cbAdress.Items.Add(sdr[0]);
         }
     }
 
     private void dodaj(object sender, RoutedEventArgs e)
     {
         string ime = txtIme.Text;
-        string prezime = txtPrezime.Text;
+        string prezime = txtPrez.Text;
         string jmbg = txtJMBG.Text;
         string polString = cbPol.Text.ToString();
         EPol pol = (EPol)Enum.Parse(typeof(EPol), polString, true);
-        int adresaID = int.Parse(cbAdrese.SelectedItem.ToString());
+        int adresaID = int.Parse(cbAdress.SelectedItem.ToString());
         string email = txtEmail.Text;
-        string lozinka = txtLozinka.Text;
+        string lozinka = txtPass.Text;
         Random random = new Random();
         int id = random.Next(200, 500);
 

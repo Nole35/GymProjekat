@@ -119,14 +119,14 @@
     <Compile Include="Windows\LoginReg\RegistracijaPolaznikaWindow.xaml.cs">
       <DependentUpon>RegistracijaPolaznikaWindow.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Windows\PocetniProzor\FitnesCentarWindow.xaml.cs">
-      <DependentUpon>FitnesCentarWindow.xaml</DependentUpon>
+    <Compile Include="Windows\PocetniProzor\FitnesCentarSajt.xaml.cs">
+      <DependentUpon>FitnesCentarSajt.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Windows\PocetniProzor\InfoFitnesCentraWindow.xaml.cs">
-      <DependentUpon>InfoFitnesCentraWindow.xaml</DependentUpon>
+    <Compile Include="Windows\PocetniProzor\NRGKGlavnaStr.xaml.cs">
+      <DependentUpon>NRGKGlavnaStr.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Windows\PocetniProzor\NInstruktoriWindow.xaml.cs">
-      <DependentUpon>NInstruktoriWindow.xaml</DependentUpon>
+    <Compile Include="Windows\PocetniProzor\NRGKInstruktori.xaml.cs">
+      <DependentUpon>NRGKInstruktori.xaml</DependentUpon>
     </Compile>
     <Compile Include="Windows\PolaznikProzoris\PolaznikWindow.xaml.cs">
       <DependentUpon>PolaznikWindow.xaml</DependentUpon>
@@ -241,15 +241,15 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Windows\PocetniProzor\FitnesCentarWindow.xaml">
+    <Page Include="Windows\PocetniProzor\FitnesCentarSajt.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Windows\PocetniProzor\InfoFitnesCentraWindow.xaml">
+    <Page Include="Windows\PocetniProzor\NRGKGlavnaStr.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Windows\PocetniProzor\NInstruktoriWindow.xaml">
+    <Page Include="Windows\PocetniProzor\NRGKInstruktori.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

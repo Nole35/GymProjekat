@@ -11,9 +11,9 @@
         <Label Content="Adresa" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="98,223,0,0"/>
         <Label Content="Email" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="98,279,0,0"/>
         <TextBox Name="txtIme" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="196,86,0,0"/>
-        <TextBox Name="txtPrezime" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="196,146,0,0"/>
+        <TextBox Name="txtPrez" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="196,146,0,0"/>
         <TextBox Name="txtEmail" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="196,282,0,0"/>
-        <ComboBox Name="cbAdresa" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Margin="196,223,0,0"/>
+        <ComboBox Name="cbAdress" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Margin="196,223,0,0"/>
         <Button Content="PRETRAZI" HorizontalAlignment="Left" VerticalAlignment="Top" Width="95" Margin="128,346,0,0" Height="36" Click="Button_Click"/>
 
     </Grid>

@@ -27,11 +27,11 @@ namespace SR09_2020_POP2021.Windows.Admin5
 
         private void dodaj(object sender, RoutedEventArgs e)
         {
-            int sifra = int.Parse(txtSifra.Text.ToString());
-            string ulica = txtUlica.Text;
-            string broj = txtBroj.Text;
-            string grad = txtGrad.Text;
-            string drzava = txtDrzava.Text;
+            int sifra = int.Parse(txtPass.Text.ToString());
+            string ulica = txtUl.Text;
+            string broj = txtBr.Text;
+            string grad = txtGr.Text;
+            string drzava = txtDrz.Text;
 
 
             Adresa adresa = new Adresa(sifra, ulica, broj, grad, drzava, true);

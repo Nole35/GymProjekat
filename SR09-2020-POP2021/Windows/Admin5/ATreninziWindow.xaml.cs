@@ -27,10 +27,10 @@ namespace SR09_2020_POP2021.Windows.Admin5
             Utill.Instance.CitanjeEntiteta();
             ICollectionView view = CollectionViewSource.GetDefaultView(Utill.Instance.Treninzi);
 
-            Podaci.ItemsSource = view;
-            Podaci.IsSynchronizedWithCurrentItem = true;
+            Informacije.ItemsSource = view;
+            Informacije.IsSynchronizedWithCurrentItem = true;
 
-            Podaci.ColumnWidth = new DataGridLength(1, DataGridLengthUnitType.Star);
+            Informacije.ColumnWidth = new DataGridLength(1, DataGridLengthUnitType.Star);
         }
 
         private void obrisi(object sender, RoutedEventArgs e)

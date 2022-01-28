@@ -17,11 +17,11 @@ using SR09_2020_POP2021.Model;
 namespace SR09_2020_POP2021.Windows.PocetniProzor
 {
     /// <summary>
-    /// Interaction logic for NInstruktoriWindow.xaml
+    /// Interaction logic for NRGKInstruktori.xaml
     /// </summary>
-    public partial class NInstruktoriWindow : Window
+    public partial class NRGKInstruktori : Window
     {
-        public NInstruktoriWindow()
+        public NRGKInstruktori()
         {
             InitializeComponent();
             Utill.Instance.CitanjeEntiteta();
@@ -35,8 +35,8 @@ namespace SR09_2020_POP2021.Windows.PocetniProzor
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            FitnesCentarWindow fcw = new FitnesCentarWindow();
-            fcw.Show();
+            FitnesCentarSajt fcs = new FitnesCentarSajt();
+            fcs.Show();
             this.Close();
         }
     }

@@ -17,11 +17,11 @@ using System.Windows.Shapes;
 namespace SR09_2020_POP2021.Windows.PocetniProzor
 {
     /// <summary>
-    /// Interaction logic for FitnesCentarWindow.xaml
+    /// Interaction logic for FitnesCentarSajt.xaml
     /// </summary>
-    public partial class FitnesCentarWindow : Window
+    public partial class FitnesCentarSajt : Window
     {
-        public FitnesCentarWindow()
+        public FitnesCentarSajt()
         {
             InitializeComponent();
         }
@@ -47,8 +47,8 @@ namespace SR09_2020_POP2021.Windows.PocetniProzor
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-            InfoFitnesCentraWindow ifc = new InfoFitnesCentraWindow();
-            ifc.Show();
+            NRGKGlavnaStr nrgkgl = new NRGKGlavnaStr();
+            nrgkgl.Show();
             this.Close();
         }
 

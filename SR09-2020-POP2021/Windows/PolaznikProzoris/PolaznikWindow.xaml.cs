@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SR09_2020_POP2021.Windows.PregledIzmenaSPodataka;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -24,6 +25,18 @@ namespace SR09_2020_POP2021.Windows.PolaznikProzoris
         {
             InitializeComponent();
             this.prosledjeniJmbg = jmbg;
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            PregledPodPolaznika ppp = new PregledPodPolaznika(prosledjeniJmbg);
+            ppp.Show();
+            this.Close();
         }
     }
 }
