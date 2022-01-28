@@ -56,5 +56,43 @@ namespace SR09_2020_POP2021.Windows.Admin5
             at.Show();
             this.Close();
         }
+
+        private void Button_Click_2(object sender, RoutedEventArgs e)
+        {
+            AInstruktoriWindow iw = new AInstruktoriWindow();
+            iw.Show();
+            this.Close();
+        }
+
+        private void Button_Click_3(object sender, RoutedEventArgs e)
+        {
+            APolazniciWindow pw = new APolazniciWindow();
+            pw.Show();
+            this.Close();
+        }
+
+        private void Button_Click_4(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Button_Click_5(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Button_Click_6(object sender, RoutedEventArgs e)
+        {
+            AAdresaWindow aaw = new AAdresaWindow();
+            aaw.Show();
+            this.Close();
+        }
+
+        private void Button_Click_7(object sender, RoutedEventArgs e)
+        {
+            AFitnesCentarWindow aaafc = new AFitnesCentarWindow();
+            aaafc.Show();
+            this.Close();
+        }
     }
 }

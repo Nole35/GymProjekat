@@ -36,7 +36,9 @@ namespace SR09_2020_POP2021.Windows.Admin5
 
         private void dodaj(object sender, RoutedEventArgs e)
         {
-
+            DodavanjeFitnesCentra dfc = new DodavanjeFitnesCentra();
+            dfc.Show();
+            this.Close();
         }
 
         private void obrisi(object sender, RoutedEventArgs e)

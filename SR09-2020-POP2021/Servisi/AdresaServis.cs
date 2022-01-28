@@ -25,14 +25,14 @@ namespace SR09_2020_POP2021.Servisi
                 conn.Open();
 
                 SqlCommand command = conn.CreateCommand();
-                command.CommandText = @"insert into dbo.Adrese (id,Broj, Ulica, Grad, Drzava,active)
-                                        output inserted.id VALUES (@id,@Broj, @Ulica, @Grad, @Drzava,@active)";
+                command.CommandText = @"insert into dbo.Adrese (id,Broj, Ulica, Grad, Drzava,aktivan)
+                                        output inserted.id VALUES (@id,@Broj, @Ulica, @Grad, @Drzava,@aktivan)";
                 command.Parameters.Add(new SqlParameter("id", adresa.SifraAdrese = rnd.Next(1, 1000)));
                 command.Parameters.Add(new SqlParameter("Broj", adresa.Broj));
                 command.Parameters.Add(new SqlParameter("Ulica", adresa.Ulica));
                 command.Parameters.Add(new SqlParameter("Grad", adresa.Grad));
                 command.Parameters.Add(new SqlParameter("Drzava", adresa.Drzava));
-                command.Parameters.Add(new SqlParameter("active", adresa.Aktivan));
+                command.Parameters.Add(new SqlParameter("aktivan", adresa.Aktivan));
                 return (int)command.ExecuteScalar();
             }
 
@@ -48,10 +48,10 @@ namespace SR09_2020_POP2021.Servisi
                 SqlCommand command = conn.CreateCommand();
 
                 command.CommandText = @"update dbo.Adrese 
-                                        SET Active = @Active 
+                                        SET Aktivan = @Aktivan 
                                         where id = @id";
 
-                command.Parameters.Add(new SqlParameter("Active", adresa.Aktivan = false));
+                command.Parameters.Add(new SqlParameter("Aktivan", adresa.Aktivan = false));
                 command.Parameters.Add(new SqlParameter("id", adresa.SifraAdrese));
 
                 command.ExecuteNonQuery();

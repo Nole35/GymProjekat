@@ -1,0 +1,33 @@
+﻿<Window x:Class="SR09_2020_POP2021.Windows.Admin5.DodavanjeInstruktora"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SR09_2020_POP2021.Windows.Admin5"
+        mc:Ignorable="d"
+        Title="DodavanjeInstruktora" Height="450" Width="800">
+    <Grid>
+        <Grid HorizontalAlignment="Left" Width="759" Margin="10,-10,0,10">
+            <Label Content="Ime:" HorizontalAlignment="Left" Height="30" Margin="75,33,0,0" VerticalAlignment="Top" Width="100"/>
+            <TextBox Name="txtIme" HorizontalAlignment="Left" Height="30" Margin="180,33,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+            <Label Content="Pol:" HorizontalAlignment="Left" Height="30" Margin="75,206,0,0" VerticalAlignment="Top" Width="100"/>
+            <TextBox Name="txtPrezime" HorizontalAlignment="Left" Height="30" Margin="180,94,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+            <Label Content="Prezime:" HorizontalAlignment="Left" Height="30" Margin="75,94,0,0" VerticalAlignment="Top" Width="100"/>
+            <Label Content="JMBG:" HorizontalAlignment="Left" Height="30" Margin="75,147,0,0" VerticalAlignment="Top" Width="100"/>
+            <TextBox Name="txtJMBG" HorizontalAlignment="Left" Height="30" Margin="180,147,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+            <Label Content="Adresa:" HorizontalAlignment="Left" Height="30" Margin="75,272,0,0" VerticalAlignment="Top" Width="100"/>
+            <Label Content="E-mail:" HorizontalAlignment="Left" Height="30" Margin="75,322,0,0" VerticalAlignment="Top" Width="100"/>
+            <TextBox Name="txtEmail" HorizontalAlignment="Left" Height="30" Margin="180,322,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+            <Label Content="Lozinka:" HorizontalAlignment="Left" Height="30" Margin="75,372,0,0" VerticalAlignment="Top" Width="100"/>
+            <TextBox Name="txtLozinka" HorizontalAlignment="Left" Height="30" Margin="180,372,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+            <ComboBox Name="cbPol" HorizontalAlignment="Left" Height="27" Margin="182,206,0,0" VerticalAlignment="Top" Width="118">
+                <ComboBoxItem Content="MUSKI"/>
+                <ComboBoxItem Content="ZENSKI"/>
+            </ComboBox>
+            <ComboBox Name="cbAdrese"  HorizontalAlignment="Left" Height="22" Margin="180,280,0,0" VerticalAlignment="Top" Width="116"/>
+
+        </Grid>
+        <Button Content="DODAJ" HorizontalAlignment="Left" VerticalAlignment="Top" Width="169" Margin="479,126,0,0" Height="56" Click="dodaj"/>
+        <Button Content="CLOSE" HorizontalAlignment="Left" VerticalAlignment="Top" Width="169" Margin="479,290,0,0" Height="56" Click="close"/>
+    </Grid>
+</Window>

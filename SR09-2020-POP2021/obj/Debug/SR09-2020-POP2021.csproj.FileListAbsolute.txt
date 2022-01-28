@@ -67,3 +67,11 @@ C:\Users\Nole\Downloads\SR09-2020-POP2021\SR09-2020-POP2021\obj\Debug\Windows\Ad
 C:\Users\Nole\Downloads\SR09-2020-POP2021\SR09-2020-POP2021\obj\Debug\Windows\Admin5\IzmenaAFC.baml
 C:\Users\Nole\Downloads\SR09-2020-POP2021\SR09-2020-POP2021\obj\Debug\Windows\Admin5\IzmenaAInstruktora.baml
 C:\Users\Nole\Downloads\SR09-2020-POP2021\SR09-2020-POP2021\obj\Debug\Windows\Admin5\IzmenaAPolaznika.baml
+C:\Users\Nole\Downloads\SR09-2020-POP2021\SR09-2020-POP2021\obj\Debug\Windows\Admin5\DodavanjeAdrese.g.cs
+C:\Users\Nole\Downloads\SR09-2020-POP2021\SR09-2020-POP2021\obj\Debug\Windows\Admin5\DodavanjeInstruktora.g.cs
+C:\Users\Nole\Downloads\SR09-2020-POP2021\SR09-2020-POP2021\obj\Debug\Windows\Admin5\DodavanjePolaznika.g.cs
+C:\Users\Nole\Downloads\SR09-2020-POP2021\SR09-2020-POP2021\obj\Debug\Windows\Admin5\DodavanjeAdrese.baml
+C:\Users\Nole\Downloads\SR09-2020-POP2021\SR09-2020-POP2021\obj\Debug\Windows\Admin5\DodavanjeInstruktora.baml
+C:\Users\Nole\Downloads\SR09-2020-POP2021\SR09-2020-POP2021\obj\Debug\Windows\Admin5\DodavanjePolaznika.baml
+C:\Users\Nole\Downloads\SR09-2020-POP2021\SR09-2020-POP2021\obj\Debug\Windows\Admin5\DodavanjeFitnesCentra.g.cs
+C:\Users\Nole\Downloads\SR09-2020-POP2021\SR09-2020-POP2021\obj\Debug\Windows\Admin5\DodavanjeFitnesCentra.baml

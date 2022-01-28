@@ -27,12 +27,12 @@ namespace SR09_2020_POP2021.Servisi
                 conn.Open();
 
                 SqlCommand command = conn.CreateCommand();
-                command.CommandText = @"insert into dbo.FitnesCentri (id,Naziv,adresa_id,active)
-                                        output inserted.id VALUES (@id,@Naziv,@adresa_id,@active)";
+                command.CommandText = @"insert into dbo.FitnesCentri (id,Naziv,adresa_id,aktivan)
+                                        output inserted.id VALUES (@id,@Naziv,@adresa_id,@aktivan)";
                 command.Parameters.Add(new SqlParameter("id", fitnesCentar.Sifra = rnd.Next(1, 1000)));
                 command.Parameters.Add(new SqlParameter("Naziv", fitnesCentar.Naziv));
                 command.Parameters.Add(new SqlParameter("adresa_id", fitnesCentar.AdresaID));
-                command.Parameters.Add(new SqlParameter("active", fitnesCentar.Aktivan));
+                command.Parameters.Add(new SqlParameter("aktivan", fitnesCentar.Aktivan));
 
                 return (int)command.ExecuteScalar();
             }
@@ -48,10 +48,10 @@ namespace SR09_2020_POP2021.Servisi
                 SqlCommand command = conn.CreateCommand();
 
                 command.CommandText = @"update dbo.FitnesCentri
-                                        SET Active = @Active
+                                        SET Aktivan = @Aktivan
                                         where id = @id";
 
-                command.Parameters.Add(new SqlParameter("Active", fitnesCentar.Aktivan = false));
+                command.Parameters.Add(new SqlParameter("Aktivan", fitnesCentar.Aktivan = false));
                 command.Parameters.Add(new SqlParameter("id", fitnesCentar.Sifra));
 
                 command.ExecuteNonQuery();

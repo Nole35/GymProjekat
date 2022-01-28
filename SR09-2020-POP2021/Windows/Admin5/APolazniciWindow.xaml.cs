@@ -35,7 +35,9 @@ namespace SR09_2020_POP2021.Windows.Admin5
 
         private void dodaj(object sender, RoutedEventArgs e)
         {
-
+            DodavanjePolaznika dp = new DodavanjePolaznika();
+            dp.Show();
+            this.Close();
         }
 
         private void obrisi(object sender, RoutedEventArgs e)

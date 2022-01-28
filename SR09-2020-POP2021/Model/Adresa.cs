@@ -17,6 +17,20 @@ namespace SR09_2020_POP2021.Model
         }
         private string ulica;
 
+        public Adresa()
+        {
+
+        }
+        public Adresa(int sifraAdrese, string ulica, string broj, string grad, string drzava, bool aktivan)
+        {
+            this.sifraAdrese = sifraAdrese;
+            this.ulica = ulica;
+            this.broj = broj;
+            this.grad = grad;
+            this.drzava = drzava;
+            this.aktivan = aktivan;
+        }
+
         public string Ulica
         {
             get { return ulica; }

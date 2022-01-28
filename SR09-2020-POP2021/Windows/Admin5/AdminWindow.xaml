@@ -9,12 +9,12 @@
     <Grid>
         <Button Content="PRETRAGA POLAZNIKA" HorizontalAlignment="Left" Height="81" Margin="91,83,0,0" VerticalAlignment="Top" Width="163" Click="Button_Click"/>
         <Button Content="TRENINZI" HorizontalAlignment="Left" Height="81" Margin="347,83,0,0" VerticalAlignment="Top" Width="163" Click="Button_Click_1"/>
-        <Button Content="POLAZNICI" HorizontalAlignment="Left" Height="81" Margin="595,83,0,0" VerticalAlignment="Top" Width="163"/>
-        <Button Content="INSTRUKTORI" HorizontalAlignment="Left" Height="81" Margin="91,239,0,0" VerticalAlignment="Top" Width="163"/>
-        <Button Content="FITNES CENTAR" HorizontalAlignment="Left" Height="81" Margin="347,239,0,0" VerticalAlignment="Top" Width="163"/>
-        <Button Content="ADRESA" HorizontalAlignment="Left" Height="81" Margin="595,239,0,0" VerticalAlignment="Top" Width="163"/>
-        <Button Content="CLOSE" HorizontalAlignment="Left" Height="40" Margin="542,348,0,0" VerticalAlignment="Top" Width="163"/>
-        <Button Content="ODJAVA" HorizontalAlignment="Left" Height="40" Margin="272,348,0,0" VerticalAlignment="Top" Width="163"/>
+        <Button Content="POLAZNICI" HorizontalAlignment="Left" Height="81" Margin="595,83,0,0" VerticalAlignment="Top" Width="163" Click="Button_Click_3"/>
+        <Button Content="INSTRUKTORI" HorizontalAlignment="Left" Height="81" Margin="91,239,0,0" VerticalAlignment="Top" Width="163" Click="Button_Click_2"/>
+        <Button Content="FITNES CENTAR" HorizontalAlignment="Left" Height="81" Margin="347,239,0,0" VerticalAlignment="Top" Width="163" Click="Button_Click_7"/>
+        <Button Content="ADRESA" HorizontalAlignment="Left" Height="81" Margin="595,239,0,0" VerticalAlignment="Top" Width="163" Click="Button_Click_6"/>
+        <Button Content="CLOSE" HorizontalAlignment="Left" Height="40" Margin="542,348,0,0" VerticalAlignment="Top" Width="163" Click="Button_Click_5"/>
+        <Button Content="ODJAVA" HorizontalAlignment="Left" Height="40" Margin="272,348,0,0" VerticalAlignment="Top" Width="163" Click="Button_Click_4"/>
         <Button Content="PREGLED PODATAKA" HorizontalAlignment="Left" Height="38" Margin="75,350,0,0" VerticalAlignment="Top" Width="119" Click="pregledPodataka"/>
     </Grid>
 </Window>

@@ -23,7 +23,6 @@ namespace SR09_2020_POP2021.Windows.Admin5
     {
         public ATreninziWindow()
         {
-
             InitializeComponent();
             Utill.Instance.CitanjeEntiteta();
             ICollectionView view = CollectionViewSource.GetDefaultView(Utill.Instance.Treninzi);
@@ -36,10 +35,7 @@ namespace SR09_2020_POP2021.Windows.Admin5
 
         private void obrisi(object sender, RoutedEventArgs e)
         {
-            var selektovaniTrening = Podaci.SelectedItem;
-            Trening trening = (Trening)selektovaniTrening;
-            Utill.Instance.DeleteTrening(trening.Sifra);
-            Utill.Instance.Treninzi.Remove(trening);
+
         }
 
         private void close(object sender, RoutedEventArgs e)
