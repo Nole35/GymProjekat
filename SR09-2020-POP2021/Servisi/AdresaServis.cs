@@ -13,14 +13,7 @@ namespace SR09_2020_POP2021.Servisi
 {
     public class AdresaServis : IAdresaServis
     {
-        public void deleteAdresa(int broj)
-        {
-            Adresa k = Utill.Instance.Adrese.ToList().Find(adresa => adresa.SifraAdrese == (broj));
-
-            k.Aktivan = false;
-
-            updateAdresa(k);
-        }
+      
 
         public void readAdrese()
         {
@@ -130,6 +123,15 @@ namespace SR09_2020_POP2021.Servisi
 
                 command.ExecuteScalar();
             }
+        }
+
+        public void deleteAdresa(int broj)
+        {
+            Adresa k = Utill.Instance.Adrese.ToList().Find(adresa => adresa.SifraAdrese == (broj));
+
+            k.Aktivan = false;
+
+            updateAdresa(k);
         }
     }
 }

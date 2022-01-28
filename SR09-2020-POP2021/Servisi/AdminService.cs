@@ -12,12 +12,7 @@ namespace SR09_2020_POP2021.Servisi
 {
     public class AdminService : IAdminService
     {
-        public void deleteAdmin(int broj)
-        {
-            Admin k = Utill.Instance.Admini.ToList().Find(Admin => Admin.Id.Equals(broj));
-            k.Aktivan = false;
-            updateAdmin(k);
-        }
+       
 
         public void readAdmin()
         {
@@ -55,6 +50,7 @@ namespace SR09_2020_POP2021.Servisi
             throw new NotImplementedException();
         }
 
+
         public void updateAdmin(object obj)
         {
             Admin admin = obj as Admin;
@@ -83,6 +79,13 @@ namespace SR09_2020_POP2021.Servisi
 
                 command.ExecuteScalar();
             }
+        }
+
+        public void deleteAdmin(int broj)
+        {
+            Admin k = Utill.Instance.Admini.ToList().Find(Admin => Admin.Id.Equals(broj));
+            k.Aktivan = false;
+            updateAdmin(k);
         }
     }
 }

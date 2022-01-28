@@ -11,14 +11,7 @@ namespace SR09_2020_POP2021.Servisi
 {
     class TreningServis : ITreningServis
     {
-        public void deleteTrening(int broj)
-        {
-            Trening k = Utill.Instance.Treninzi.ToList().Find(Trening => Trening.Sifra.Equals(broj));
-            k.Aktivan = false;
-            //   if (k == null)
-            // throw new UserNotFoundException($"Ne postoji korisnik sa korisnickim imenom {username}");
-            updateTrening(k);
-        }
+    
 
         public void readTrening()
         {
@@ -124,6 +117,15 @@ namespace SR09_2020_POP2021.Servisi
 
                 command.ExecuteScalar();
             }
+        }
+
+        public void deleteTrening(int broj)
+        {
+            Trening k = Utill.Instance.Treninzi.ToList().Find(Trening => Trening.Sifra.Equals(broj));
+            k.Aktivan = false;
+            //   if (k == null)
+            // throw new UserNotFoundException($"Ne postoji korisnik sa korisnickim imenom {username}");
+            updateTrening(k);
         }
     }
 }

@@ -11,14 +11,7 @@ namespace SR09_2020_POP2021.Servisi
 {
     class FitnesCentarServis : IFitnesCentarServis
     {
-        public void deleteFitnesCentar(int broj)
-        {
-            FitnesCentar k = Utill.Instance.FitnesCentri.ToList().Find(FitnesCentar => FitnesCentar.Sifra.Equals(broj));
-            k.Aktivan = false;
-            //  if (k == null)
-            // throw new UserNotFoundException($"Ne postoji korisnik sa korisnickim imenom {username}");
-            updateFitnesCentar(k);
-        }
+        
 
 
         public void readFitnesCentar()
@@ -118,6 +111,15 @@ namespace SR09_2020_POP2021.Servisi
                 command.ExecuteScalar();
             }
 
+        }
+
+        public void deleteFitnesCentar(int broj)
+        {
+            FitnesCentar k = Utill.Instance.FitnesCentri.ToList().Find(FitnesCentar => FitnesCentar.Sifra.Equals(broj));
+            k.Aktivan = false;
+            //  if (k == null)
+            // throw new UserNotFoundException($"Ne postoji korisnik sa korisnickim imenom {username}");
+            updateFitnesCentar(k);
         }
     }
 }

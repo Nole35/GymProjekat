@@ -13,6 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using SR09_2020_POP2021.Model;
 using SR09_2020_POP2021.Windows.PregledIzmenaSPodataka;
+using SR09_2020_POP2021.Windows.Pretraga;
 
 namespace SR09_2020_POP2021.Windows.Admin5
 {
@@ -39,6 +40,13 @@ namespace SR09_2020_POP2021.Windows.Admin5
         {
             PregledPodataka podataka = new PregledPodataka(prosledjeniJmbg);
             podataka.Show();
+            this.Close();
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            PretragaPolaznikaWindow ppw = new PretragaPolaznikaWindow();
+            ppw.Show();
             this.Close();
         }
     }

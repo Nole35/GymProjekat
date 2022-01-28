@@ -107,14 +107,32 @@
     <Compile Include="Windows\PolaznikProzoris\PolaznikWindow.xaml.cs">
       <DependentUpon>PolaznikWindow.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Windows\PregledIzmenaSPodataka\IzmenaPodInstruktora.xaml.cs">
+      <DependentUpon>IzmenaPodInstruktora.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\PregledIzmenaSPodataka\IzmenaPodPolaznika.xaml.cs">
+      <DependentUpon>IzmenaPodPolaznika.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Windows\PregledIzmenaSPodataka\IzmeniPodatke.xaml.cs">
       <DependentUpon>IzmeniPodatke.xaml</DependentUpon>
     </Compile>
     <Compile Include="Windows\PregledIzmenaSPodataka\PregledPodataka.xaml.cs">
       <DependentUpon>PregledPodataka.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Windows\PregledIzmenaSPodataka\PregledPodInstruktora.xaml.cs">
+      <DependentUpon>PregledPodInstruktora.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\PregledIzmenaSPodataka\PregledPodPolaznika.xaml.cs">
+      <DependentUpon>PregledPodPolaznika.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Windows\Pretraga\PretragaInstruktoraWindow.xaml.cs">
       <DependentUpon>PretragaInstruktoraWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\Pretraga\PretragaPolaznikaWindow.xaml.cs">
+      <DependentUpon>PretragaPolaznikaWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\Pretraga\PrikazPretragePolaznika.xaml.cs">
+      <DependentUpon>PrikazPretragePolaznika.xaml</DependentUpon>
     </Compile>
     <Compile Include="Windows\Pretraga\PrikazRezultataPretrage.xaml.cs">
       <DependentUpon>PrikazRezultataPretrage.xaml</DependentUpon>
@@ -183,6 +201,14 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Windows\PregledIzmenaSPodataka\IzmenaPodInstruktora.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\PregledIzmenaSPodataka\IzmenaPodPolaznika.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Windows\PregledIzmenaSPodataka\IzmeniPodatke.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -191,7 +217,23 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Windows\PregledIzmenaSPodataka\PregledPodInstruktora.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\PregledIzmenaSPodataka\PregledPodPolaznika.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Windows\Pretraga\PretragaInstruktoraWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\Pretraga\PretragaPolaznikaWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\Pretraga\PrikazPretragePolaznika.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

@@ -11,15 +11,6 @@ namespace SR09_2020_POP2021.Servisi
 {
     class InstruktoriServis : IInstruktoriServis
     {
-        public void deleteInstruktor(int id)
-        {
-            Instruktor k = Utill.Instance.Instruktori.ToList().Find(Instruktor => Instruktor.Id.Equals(id));
-            k.Aktivan = false;
-            //   if (k == null)
-            // throw new UserNotFoundException($"Ne postoji korisnik sa korisnickim imenom {username}");
-            updateInstruktor(k);
-        }
-
         public void readInstruktor()
         {
             Utill.Instance.Instruktori = new ObservableCollection<Instruktor>();
@@ -138,6 +129,15 @@ namespace SR09_2020_POP2021.Servisi
 
                 command.ExecuteScalar();
             }
+        }
+
+        public void deleteInstruktor(int id)
+        {
+            Instruktor k = Utill.Instance.Instruktori.ToList().Find(Instruktor => Instruktor.Id.Equals(id));
+            k.Aktivan = false;
+            //   if (k == null)
+            // throw new UserNotFoundException($"Ne postoji korisnik sa korisnickim imenom {username}");
+            updateInstruktor(k);
         }
     }
 }
