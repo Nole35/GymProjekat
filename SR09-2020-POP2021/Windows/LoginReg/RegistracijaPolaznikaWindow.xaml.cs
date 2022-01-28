@@ -62,7 +62,7 @@ namespace SR09_2020_POP2021.Windows.LoginReg
         private void close(object sender, RoutedEventArgs e)
         {
             this.Close();
-            FitnesCentarAWindow f = new FitnesCentarAWindow();
+            AFitnesCentarWindow f = new AFitnesCentarWindow();
             f.Show();
         }
     }

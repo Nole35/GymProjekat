@@ -8,10 +8,13 @@ namespace SR09_2020_POP2021.Servisi
 {
     public interface IPolaznikServis
     {
-        void readPolaznik();
-        int savePolaznik(Object obj);
+       
         void updatePolaznik(Object obj);
+
+        int savePolaznik(Object obj);
         void updatePolaznik1(Object obj);
         void deletePolaznik(int broj);
+
+        void readPolaznik();
     }
 }

@@ -11,45 +11,7 @@ namespace SR09_2020_POP2021.Servisi
 {
     class InstruktoriServis : IInstruktoriServis
     {
-        public void readInstruktor()
-        {
-            Utill.Instance.Instruktori = new ObservableCollection<Instruktor>();
-            using (SqlConnection conn = new SqlConnection(Utill.CONNECTION_STRING))
-            {
-                conn.Open();
-                SqlCommand command = conn.CreateCommand();
-
-                command.CommandText = @"select * from Instruktori";
-
-                SqlDataReader reader = command.ExecuteReader();
-
-                while (reader.Read())
-                {
-                    Utill.Instance.Instruktori.Add(new Instruktor
-                    {
-                        Id = reader.GetInt32(0),
-                        Ime = reader.GetString(1),
-                        Prezime = reader.GetString(2),
-                        Lozinka = reader.GetString(3),
-                        Email = reader.GetString(4),
-                        JMBG = reader.GetString(5),
-                        Pol = (EPol)Enum.Parse(typeof(EPol), reader.GetString(6)),
-                        Aktivan = reader.GetBoolean(7),
-                        AdresaId = reader.GetInt32(8)
-
-
-
-
-                    });
-
-
-                }
-                reader.Close();
-
-
-
-            }
-        }
+       
 
         public int saveInstruktor(object obj)
         {
@@ -128,6 +90,46 @@ namespace SR09_2020_POP2021.Servisi
                 command.Parameters.Add(new SqlParameter("adresa_id", instruktor.AdresaId));
 
                 command.ExecuteScalar();
+            }
+        }
+
+        public void readInstruktor()
+        {
+            Utill.Instance.Instruktori = new ObservableCollection<Instruktor>();
+            using (SqlConnection conn = new SqlConnection(Utill.CONNECTION_STRING))
+            {
+                conn.Open();
+                SqlCommand command = conn.CreateCommand();
+
+                command.CommandText = @"select * from Instruktori";
+
+                SqlDataReader reader = command.ExecuteReader();
+
+                while (reader.Read())
+                {
+                    Utill.Instance.Instruktori.Add(new Instruktor
+                    {
+                        Id = reader.GetInt32(0),
+                        Ime = reader.GetString(1),
+                        Prezime = reader.GetString(2),
+                        Lozinka = reader.GetString(3),
+                        Email = reader.GetString(4),
+                        JMBG = reader.GetString(5),
+                        Pol = (EPol)Enum.Parse(typeof(EPol), reader.GetString(6)),
+                        Aktivan = reader.GetBoolean(7),
+                        AdresaId = reader.GetInt32(8)
+
+
+
+
+                    });
+
+
+                }
+                reader.Close();
+
+
+
             }
         }
 

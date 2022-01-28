@@ -13,40 +13,7 @@ namespace SR09_2020_POP2021.Servisi
     {
     
 
-        public void readTrening()
-        {
-            Utill.Instance.Treninzi = new ObservableCollection<Trening>();
-            using (SqlConnection conn = new SqlConnection(Utill.CONNECTION_STRING))
-            {
-                conn.Open();
-
-                SqlCommand command = conn.CreateCommand();
-
-                command.CommandText = @"select * from Treninzi where datum_treninga >= CAST(CURRENT_TIMESTAMP AS DATE);";
-
-                SqlDataReader reader = command.ExecuteReader();
-                while (reader.Read())
-                {
-                    Utill.Instance.Treninzi.Add(new Trening
-                    {
-                        Sifra = reader.GetInt32(0),
-                        InstruktorId = reader.GetInt32(1),
-                        DatumTreninga = reader.GetDateTime(2),
-                        VremeTreninga = reader.GetInt32(3),
-                        TrajanjeTreninga = reader.GetInt32(4),
-                        Status = (EStatus)Enum.Parse(typeof(EStatus), reader.GetString(5)),
-                        PolaznikId = reader.GetInt32(6),
-                        Aktivan = reader.GetBoolean(7)
-
-
-
-                    });
-
-
-                }
-                reader.Close();
-            }
-        }
+      
         public int saveTrening(object obj)
         {
             Trening trening = obj as Trening;
@@ -116,6 +83,42 @@ namespace SR09_2020_POP2021.Servisi
                 command.Parameters.Add(new SqlParameter("sifra", trening.Sifra));
 
                 command.ExecuteScalar();
+            }
+        }
+
+
+        public void readTrening()
+        {
+            Utill.Instance.Treninzi = new ObservableCollection<Trening>();
+            using (SqlConnection conn = new SqlConnection(Utill.CONNECTION_STRING))
+            {
+                conn.Open();
+
+                SqlCommand command = conn.CreateCommand();
+
+                command.CommandText = @"select * from Treninzi where datum_treninga >= CAST(CURRENT_TIMESTAMP AS DATE);";
+
+                SqlDataReader reader = command.ExecuteReader();
+                while (reader.Read())
+                {
+                    Utill.Instance.Treninzi.Add(new Trening
+                    {
+                        Sifra = reader.GetInt32(0),
+                        InstruktorId = reader.GetInt32(1),
+                        DatumTreninga = reader.GetDateTime(2),
+                        VremeTreninga = reader.GetInt32(3),
+                        TrajanjeTreninga = reader.GetInt32(4),
+                        Status = (EStatus)Enum.Parse(typeof(EStatus), reader.GetString(5)),
+                        PolaznikId = reader.GetInt32(6),
+                        Aktivan = reader.GetBoolean(7)
+
+
+
+                    });
+
+
+                }
+                reader.Close();
             }
         }
 

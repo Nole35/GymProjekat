@@ -49,5 +49,12 @@ namespace SR09_2020_POP2021.Windows.Admin5
             ppw.Show();
             this.Close();
         }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            ATreninziWindow at = new ATreninziWindow();
+            at.Show();
+            this.Close();
+        }
     }
 }

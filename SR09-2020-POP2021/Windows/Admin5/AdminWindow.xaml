@@ -8,7 +8,7 @@
       Title="AdminWindow" Height="450" Width="800">
     <Grid>
         <Button Content="PRETRAGA POLAZNIKA" HorizontalAlignment="Left" Height="81" Margin="91,83,0,0" VerticalAlignment="Top" Width="163" Click="Button_Click"/>
-        <Button Content="TRENINZI" HorizontalAlignment="Left" Height="81" Margin="347,83,0,0" VerticalAlignment="Top" Width="163"/>
+        <Button Content="TRENINZI" HorizontalAlignment="Left" Height="81" Margin="347,83,0,0" VerticalAlignment="Top" Width="163" Click="Button_Click_1"/>
         <Button Content="POLAZNICI" HorizontalAlignment="Left" Height="81" Margin="595,83,0,0" VerticalAlignment="Top" Width="163"/>
         <Button Content="INSTRUKTORI" HorizontalAlignment="Left" Height="81" Margin="91,239,0,0" VerticalAlignment="Top" Width="163"/>
         <Button Content="FITNES CENTAR" HorizontalAlignment="Left" Height="81" Margin="347,239,0,0" VerticalAlignment="Top" Width="163"/>

@@ -14,36 +14,7 @@ namespace SR09_2020_POP2021.Servisi
     {
        
 
-        public void readAdmin()
-        {
-            Utill.Instance.Admini = new ObservableCollection<Admin>();
-            using (SqlConnection conn = new SqlConnection(Utill.CONNECTION_STRING))
-            {
-                conn.Open();
-                SqlCommand command = conn.CreateCommand();
-
-                command.CommandText = @"select * from Administrator";
-
-                SqlDataReader reader = command.ExecuteReader();
-
-                while (reader.Read())
-                {
-                    Utill.Instance.Admini.Add(new Admin
-                    {
-                        Id = reader.GetInt32(0),
-                        Ime = reader.GetString(1),
-                        Prezime = reader.GetString(2),
-                        Lozinka = reader.GetString(3),
-                        Email = reader.GetString(4),
-                        JMBG = reader.GetString(5),
-                        Pol = (EPol)Enum.Parse(typeof(EPol), reader.GetString(6)),
-                        Aktivan = reader.GetBoolean(7),
-                        AdresaId = reader.GetInt32(8),
-                    });
-                }
-                reader.Close();
-            }
-        }
+       
 
         public int saveAdmin(object obj)
         {
@@ -78,6 +49,37 @@ namespace SR09_2020_POP2021.Servisi
                 command.Parameters.Add(new SqlParameter("adresa_id", admin.AdresaId));
 
                 command.ExecuteScalar();
+            }
+        }
+
+        public void readAdmin()
+        {
+            Utill.Instance.Admini = new ObservableCollection<Admin>();
+            using (SqlConnection conn = new SqlConnection(Utill.CONNECTION_STRING))
+            {
+                conn.Open();
+                SqlCommand command = conn.CreateCommand();
+
+                command.CommandText = @"select * from Administrator";
+
+                SqlDataReader reader = command.ExecuteReader();
+
+                while (reader.Read())
+                {
+                    Utill.Instance.Admini.Add(new Admin
+                    {
+                        Id = reader.GetInt32(0),
+                        Ime = reader.GetString(1),
+                        Prezime = reader.GetString(2),
+                        Lozinka = reader.GetString(3),
+                        Email = reader.GetString(4),
+                        JMBG = reader.GetString(5),
+                        Pol = (EPol)Enum.Parse(typeof(EPol), reader.GetString(6)),
+                        Aktivan = reader.GetBoolean(7),
+                        AdresaId = reader.GetInt32(8),
+                    });
+                }
+                reader.Close();
             }
         }
 

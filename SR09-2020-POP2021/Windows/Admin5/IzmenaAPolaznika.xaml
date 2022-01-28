@@ -1,0 +1,21 @@
+﻿<Window x:Class="SR09_2020_POP2021.Windows.Admin5.IzmenaAPolaznika"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SR09_2020_POP2021.Windows.Admin5"
+        mc:Ignorable="d"
+        Title="IzmenaAPolaznika" Height="450" Width="800">
+    <Grid>
+        <Label Content="Ime" HorizontalAlignment="Left" VerticalAlignment="Top" Height="41" Width="133" Margin="43,41,0,0"/>
+        <Label Content="Prezime" HorizontalAlignment="Left" VerticalAlignment="Top" Height="41" Width="133" Margin="43,110,0,0"/>
+        <Label Content="Email" HorizontalAlignment="Left" VerticalAlignment="Top" Height="41" Width="133" Margin="43,179,0,0" RenderTransformOrigin="0.571,2.813"/>
+        <Label Content="Pol" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="43,0,0,133" Height="40" Width="74"/>
+        <TextBox Text="{Binding Path=Ime}" Name="txtIme" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="176,41,0,0"/>
+        <TextBox Text="{Binding Path=Prezime}" Name="txtPrezime" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="176,114,0,0"/>
+        <TextBox Text="{Binding Path=Email}" Name="txtEmail" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="176,179,0,0"/>
+        <ComboBox Name="cbPol" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Margin="176,247,0,0"/>
+        <Button Content="IZMENI" HorizontalAlignment="Left" VerticalAlignment="Top" Width="95" Margin="101,324,0,0" Height="42" Click="Button_Click"/>
+
+    </Grid>
+</Window>

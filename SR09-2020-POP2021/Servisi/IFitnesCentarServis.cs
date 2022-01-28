@@ -8,10 +8,14 @@ namespace SR09_2020_POP2021.Servisi
 {
     interface IFitnesCentarServis
     {
-        void readFitnesCentar();
-        int saveFitnesCentar(Object obj);
+       
+       
         void updateFitnesCentar(Object obj);
+
+        int saveFitnesCentar(Object obj);
         void updateFitnesCentar1(Object obj);
         void deleteFitnesCentar(int broj);
+
+        void readFitnesCentar();
     }
 }

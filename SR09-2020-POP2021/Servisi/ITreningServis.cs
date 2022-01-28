@@ -8,10 +8,14 @@ namespace SR09_2020_POP2021.Servisi
 {
     interface ITreningServis
     {
-        void readTrening();
-        int saveTrening(Object obj);
+        
+       
         void updateTrening(Object obj);
+
+        int saveTrening(Object obj);
         void updateTrening1(Object obj);
         void deleteTrening(int broj);
+
+        void readTrening();
     }
 }

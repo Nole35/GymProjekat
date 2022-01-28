@@ -14,39 +14,7 @@ namespace SR09_2020_POP2021.Servisi
         
 
 
-        public void readFitnesCentar()
-        {
-            Utill.Instance.FitnesCentri = new ObservableCollection<FitnesCentar>();
-            using (SqlConnection conn = new SqlConnection(Utill.CONNECTION_STRING))
-            {
-                conn.Open();
-
-                SqlCommand command = conn.CreateCommand();
-
-                command.CommandText = @"select * from FitnesCentri";
-
-                SqlDataReader reader = command.ExecuteReader();
-
-
-                while (reader.Read())
-                {
-                    Utill.Instance.FitnesCentri.Add(new FitnesCentar
-                    {
-                        Sifra = reader.GetInt32(0),
-                        Naziv = reader.GetString(1),
-                        AdresaID = reader.GetInt32(2),
-                        Aktivan = reader.GetBoolean(3)
-                    });
-
-
-                }
-
-
-
-                reader.Close();
-            }
-        }
-
+      
 
 
         public int saveFitnesCentar(object obj)
@@ -121,5 +89,39 @@ namespace SR09_2020_POP2021.Servisi
             // throw new UserNotFoundException($"Ne postoji korisnik sa korisnickim imenom {username}");
             updateFitnesCentar(k);
         }
+
+        public void readFitnesCentar()
+        {
+            Utill.Instance.FitnesCentri = new ObservableCollection<FitnesCentar>();
+            using (SqlConnection conn = new SqlConnection(Utill.CONNECTION_STRING))
+            {
+                conn.Open();
+
+                SqlCommand command = conn.CreateCommand();
+
+                command.CommandText = @"select * from FitnesCentri";
+
+                SqlDataReader reader = command.ExecuteReader();
+
+
+                while (reader.Read())
+                {
+                    Utill.Instance.FitnesCentri.Add(new FitnesCentar
+                    {
+                        Sifra = reader.GetInt32(0),
+                        Naziv = reader.GetString(1),
+                        AdresaID = reader.GetInt32(2),
+                        Aktivan = reader.GetBoolean(3)
+                    });
+
+
+                }
+
+
+
+                reader.Close();
+            }
+        }
+
     }
 }

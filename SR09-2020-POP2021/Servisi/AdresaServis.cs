@@ -13,44 +13,6 @@ namespace SR09_2020_POP2021.Servisi
 {
     public class AdresaServis : IAdresaServis
     {
-      
-
-        public void readAdrese()
-        {
-            Utill.Instance.Adrese = new ObservableCollection<Adresa>();
-
-            using (SqlConnection conn = new SqlConnection(Utill.CONNECTION_STRING))
-            {
-                conn.Open();
-
-                SqlCommand command = conn.CreateCommand();
-
-                command.CommandText = @"select * from Adrese";
-
-                SqlDataReader reader = command.ExecuteReader();
-
-
-                while (reader.Read())
-                {
-                    Utill.Instance.Adrese.Add(new Adresa
-                    {
-                        SifraAdrese = reader.GetInt32(0),
-                        Ulica = reader.GetString(2),
-                        Broj = reader.GetString(1),
-                        Grad = reader.GetString(3),
-                        Drzava = reader.GetString(4),
-                        Aktivan = reader.GetBoolean(5)
-                    });
-
-
-                }
-
-
-
-                reader.Close();
-            }
-        }
-
 
 
         public int saveAdresa(Object obj)
@@ -124,6 +86,43 @@ namespace SR09_2020_POP2021.Servisi
                 command.ExecuteScalar();
             }
         }
+
+        public void readAdrese()
+        {
+            Utill.Instance.Adrese = new ObservableCollection<Adresa>();
+
+            using (SqlConnection conn = new SqlConnection(Utill.CONNECTION_STRING))
+            {
+                conn.Open();
+
+                SqlCommand command = conn.CreateCommand();
+
+                command.CommandText = @"select * from Adrese";
+
+                SqlDataReader reader = command.ExecuteReader();
+
+
+                while (reader.Read())
+                {
+                    Utill.Instance.Adrese.Add(new Adresa
+                    {
+                        SifraAdrese = reader.GetInt32(0),
+                        Ulica = reader.GetString(2),
+                        Broj = reader.GetString(1),
+                        Grad = reader.GetString(3),
+                        Drzava = reader.GetString(4),
+                        Aktivan = reader.GetBoolean(5)
+                    });
+
+
+                }
+
+
+
+                reader.Close();
+            }
+        }
+
 
         public void deleteAdresa(int broj)
         {

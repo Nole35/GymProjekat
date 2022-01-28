@@ -71,20 +71,32 @@
     <Compile Include="Windows\Admin5\AdminWindow.xaml.cs">
       <DependentUpon>AdminWindow.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Windows\Admin5\AdresaAWindow.xaml.cs">
-      <DependentUpon>AdresaAWindow.xaml</DependentUpon>
+    <Compile Include="Windows\Admin5\AAdresaWindow.xaml.cs">
+      <DependentUpon>AAdresaWindow.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Windows\Admin5\FitnesCentarAWindow.xaml.cs">
-      <DependentUpon>FitnesCentarAWindow.xaml</DependentUpon>
+    <Compile Include="Windows\Admin5\AFitnesCentarWindow.xaml.cs">
+      <DependentUpon>AFitnesCentarWindow.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Windows\Admin5\InstruktoriAWindow.xaml.cs">
-      <DependentUpon>InstruktoriAWindow.xaml</DependentUpon>
+    <Compile Include="Windows\Admin5\AInstruktoriWindow.xaml.cs">
+      <DependentUpon>AInstruktoriWindow.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Windows\Admin5\PolazniciAWindow.xaml.cs">
-      <DependentUpon>PolazniciAWindow.xaml</DependentUpon>
+    <Compile Include="Windows\Admin5\APolazniciWindow.xaml.cs">
+      <DependentUpon>APolazniciWindow.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Windows\Admin5\TreninziAWindow.xaml.cs">
-      <DependentUpon>TreninziAWindow.xaml</DependentUpon>
+    <Compile Include="Windows\Admin5\ATreninziWindow.xaml.cs">
+      <DependentUpon>ATreninziWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\Admin5\IzmenaAAdrese.xaml.cs">
+      <DependentUpon>IzmenaAAdrese.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\Admin5\IzmenaAFC.xaml.cs">
+      <DependentUpon>IzmenaAFC.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\Admin5\IzmenaAInstruktora.xaml.cs">
+      <DependentUpon>IzmenaAInstruktora.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\Admin5\IzmenaAPolaznika.xaml.cs">
+      <DependentUpon>IzmenaAPolaznika.xaml</DependentUpon>
     </Compile>
     <Compile Include="Windows\Instructors\InstruktorWindow.xaml.cs">
       <DependentUpon>InstruktorWindow.xaml</DependentUpon>
@@ -153,23 +165,39 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Windows\Admin5\AdresaAWindow.xaml">
+    <Page Include="Windows\Admin5\AAdresaWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Windows\Admin5\FitnesCentarAWindow.xaml">
+    <Page Include="Windows\Admin5\AFitnesCentarWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Windows\Admin5\InstruktoriAWindow.xaml">
+    <Page Include="Windows\Admin5\AInstruktoriWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Windows\Admin5\PolazniciAWindow.xaml">
+    <Page Include="Windows\Admin5\APolazniciWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Windows\Admin5\TreninziAWindow.xaml">
+    <Page Include="Windows\Admin5\ATreninziWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\Admin5\IzmenaAAdrese.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\Admin5\IzmenaAFC.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\Admin5\IzmenaAInstruktora.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\Admin5\IzmenaAPolaznika.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

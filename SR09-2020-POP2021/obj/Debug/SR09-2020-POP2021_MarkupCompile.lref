@@ -2,11 +2,15 @@
 
 FC:\Users\Nole\Downloads\SR09-2020-POP2021\SR09-2020-POP2021\MainWindow.xaml;;
 FC:\Users\Nole\Downloads\SR09-2020-POP2021\SR09-2020-POP2021\Windows\Admin5\AdminWindow.xaml;;
-FC:\Users\Nole\Downloads\SR09-2020-POP2021\SR09-2020-POP2021\Windows\Admin5\AdresaAWindow.xaml;;
-FC:\Users\Nole\Downloads\SR09-2020-POP2021\SR09-2020-POP2021\Windows\Admin5\FitnesCentarAWindow.xaml;;
-FC:\Users\Nole\Downloads\SR09-2020-POP2021\SR09-2020-POP2021\Windows\Admin5\InstruktoriAWindow.xaml;;
-FC:\Users\Nole\Downloads\SR09-2020-POP2021\SR09-2020-POP2021\Windows\Admin5\PolazniciAWindow.xaml;;
-FC:\Users\Nole\Downloads\SR09-2020-POP2021\SR09-2020-POP2021\Windows\Admin5\TreninziAWindow.xaml;;
+FC:\Users\Nole\Downloads\SR09-2020-POP2021\SR09-2020-POP2021\Windows\Admin5\AAdresaWindow.xaml;;
+FC:\Users\Nole\Downloads\SR09-2020-POP2021\SR09-2020-POP2021\Windows\Admin5\AFitnesCentarWindow.xaml;;
+FC:\Users\Nole\Downloads\SR09-2020-POP2021\SR09-2020-POP2021\Windows\Admin5\AInstruktoriWindow.xaml;;
+FC:\Users\Nole\Downloads\SR09-2020-POP2021\SR09-2020-POP2021\Windows\Admin5\APolazniciWindow.xaml;;
+FC:\Users\Nole\Downloads\SR09-2020-POP2021\SR09-2020-POP2021\Windows\Admin5\ATreninziWindow.xaml;;
+FC:\Users\Nole\Downloads\SR09-2020-POP2021\SR09-2020-POP2021\Windows\Admin5\IzmenaAAdrese.xaml;;
+FC:\Users\Nole\Downloads\SR09-2020-POP2021\SR09-2020-POP2021\Windows\Admin5\IzmenaAFC.xaml;;
+FC:\Users\Nole\Downloads\SR09-2020-POP2021\SR09-2020-POP2021\Windows\Admin5\IzmenaAInstruktora.xaml;;
+FC:\Users\Nole\Downloads\SR09-2020-POP2021\SR09-2020-POP2021\Windows\Admin5\IzmenaAPolaznika.xaml;;
 FC:\Users\Nole\Downloads\SR09-2020-POP2021\SR09-2020-POP2021\Windows\Instructors\InstruktorWindow.xaml;;
 FC:\Users\Nole\Downloads\SR09-2020-POP2021\SR09-2020-POP2021\Windows\LoginReg\PrijavaWindow.xaml;;
 FC:\Users\Nole\Downloads\SR09-2020-POP2021\SR09-2020-POP2021\Windows\LoginReg\RegistracijaPolaznikaWindow.xaml;;
