@@ -1,0 +1,18 @@
+﻿<Window x:Class="SR09_2020_POP2021.Windows.PolaznikProzoris.PolaznikWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SR09_2020_POP2021.Windows.PolaznikProzoris"
+        mc:Ignorable="d"
+       Title="PolaznikWindow" Height="450" Width="800">
+    <Grid>
+        <Button Content="PREGLED PODATAKA" HorizontalAlignment="Left" Height="63" Margin="46,49,0,0" VerticalAlignment="Top" Width="283"/>
+        <Button Content="LISTA TRENINGA" HorizontalAlignment="Left" Height="64" Margin="46,160,0,0" VerticalAlignment="Top" Width="283"/>
+        <Button Content="PRETRAZI INSTRUKTORA" HorizontalAlignment="Left" Height="64" Margin="46,291,0,0" VerticalAlignment="Top" Width="283"/>
+        <Button Content="PREGLED INSTRUKTORA" HorizontalAlignment="Left" Height="64" Margin="448,49,0,0" VerticalAlignment="Top" Width="283"/>
+        <Button Content="IZMJENI PODATKE" HorizontalAlignment="Left" Height="64" Margin="448,160,0,0" VerticalAlignment="Top" Width="283"/>
+        <Button Content="CLOSE" HorizontalAlignment="Left" Height="64" Margin="448,291,0,0" VerticalAlignment="Top" Width="283"/>
+
+    </Grid>
+</Window>

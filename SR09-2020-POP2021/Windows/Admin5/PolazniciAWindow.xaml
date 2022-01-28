@@ -1,0 +1,17 @@
+﻿<Window x:Class="SR09_2020_POP2021.Windows.Admin5.PolazniciAWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SR09_2020_POP2021.Windows.Admin5"
+        mc:Ignorable="d"
+      Title="PolazniciAWindow" Height="450" Width="800">
+    <Grid>
+        <DataGrid HorizontalAlignment="Left" Height="240" Margin="141,36,0,0" VerticalAlignment="Top" Width="521"/>
+        <Button Click="dodaj" Content="DODAJ POLAZNIKA" HorizontalAlignment="Left" Height="79" Margin="32,312,0,0" VerticalAlignment="Top" Width="148"/>
+        <Button Click="obrisi" Content="OBRISI POLAZNIKA" HorizontalAlignment="Left" Height="79" Margin="233,312,0,0" VerticalAlignment="Top" Width="147"/>
+        <Button Click="izmeni" Content="IZMJENI POLAZNIKA" HorizontalAlignment="Left" Height="79" Margin="419,312,0,0" VerticalAlignment="Top" Width="148"/>
+        <Button Click="close" Content="CLOSE" HorizontalAlignment="Left" Height="79" Margin="613,312,0,0" VerticalAlignment="Top" Width="148"/>
+
+    </Grid>
+</Window>

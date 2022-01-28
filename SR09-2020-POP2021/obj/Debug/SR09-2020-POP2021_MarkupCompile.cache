@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\Users\Nole\Downloads\SR09-2020-POP2021\SR09-2020-POP2021\App.xaml
-11151548125
+18-1932501916
 
-28824100836
+45-1643838327
 13-1505183044
-MainWindow.xaml;
+MainWindow.xaml;Windows\Admin5\AdminWindow.xaml;Windows\Admin5\AdresaAWindow.xaml;Windows\Admin5\FitnesCentarAWindow.xaml;Windows\Admin5\InstruktoriAWindow.xaml;Windows\Admin5\PolazniciAWindow.xaml;Windows\Admin5\TreninziAWindow.xaml;Windows\Instructors\InstruktorWindow.xaml;Windows\LoginReg\PrijavaWindow.xaml;Windows\LoginReg\RegistracijaPolaznikaWindow.xaml;Windows\PocetniProzor\FitnesCentarWindow.xaml;Windows\PocetniProzor\InfoFitnesCentraWindow.xaml;Windows\PocetniProzor\NInstruktoriWindow.xaml;Windows\PolaznikProzoris\PolaznikWindow.xaml;Windows\PregledIzmenaSPodataka\IzmeniPodatke.xaml;Windows\PregledIzmenaSPodataka\PregledPodataka.xaml;Windows\Pretraga\PretragaInstruktoraWindow.xaml;Windows\Pretraga\PrikazRezultataPretrage.xaml;
 
 False
 

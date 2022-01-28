@@ -1,4 +1,6 @@
-﻿using System;
+﻿using SR09_2020_POP2021.Windows.LoginReg;
+using SR09_2020_POP2021.Windows.Pretraga;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -38,7 +40,7 @@ namespace SR09_2020_POP2021.Windows.PocetniProzor
 
         private void registracija(object sender, RoutedEventArgs e)
         {
-            RegsitracijaPolaznikaWindow reg = new RegsitracijaPolaznikaWindow();
+            RegistracijaPolaznikaWindow reg = new RegistracijaPolaznikaWindow();
             reg.Show();
             this.Close();
         }
@@ -52,7 +54,7 @@ namespace SR09_2020_POP2021.Windows.PocetniProzor
 
         private void pretraga(object sender, RoutedEventArgs e)
         {
-            PretragaInstruktoraxaml pretraga = new PretragaInstruktoraxaml();
+            PretragaInstruktoraWindow pretraga = new PretragaInstruktoraWindow();
             pretraga.Show();
             this.Close();
         }
