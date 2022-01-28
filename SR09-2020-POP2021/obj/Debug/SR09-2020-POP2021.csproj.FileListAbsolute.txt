@@ -1,0 +1,15 @@
+C:\Users\Nole\Downloads\SR09-2020-POP2021\SR09-2020-POP2021\bin\Debug\SR09-2020-POP2021.exe.config
+C:\Users\Nole\Downloads\SR09-2020-POP2021\SR09-2020-POP2021\bin\Debug\SR09-2020-POP2021.exe
+C:\Users\Nole\Downloads\SR09-2020-POP2021\SR09-2020-POP2021\bin\Debug\SR09-2020-POP2021.pdb
+C:\Users\Nole\Downloads\SR09-2020-POP2021\SR09-2020-POP2021\obj\Debug\SR09-2020-POP2021.csproj.AssemblyReference.cache
+C:\Users\Nole\Downloads\SR09-2020-POP2021\SR09-2020-POP2021\obj\Debug\MainWindow.g.cs
+C:\Users\Nole\Downloads\SR09-2020-POP2021\SR09-2020-POP2021\obj\Debug\App.g.cs
+C:\Users\Nole\Downloads\SR09-2020-POP2021\SR09-2020-POP2021\obj\Debug\SR09-2020-POP2021_MarkupCompile.cache
+C:\Users\Nole\Downloads\SR09-2020-POP2021\SR09-2020-POP2021\obj\Debug\SR09-2020-POP2021_MarkupCompile.lref
+C:\Users\Nole\Downloads\SR09-2020-POP2021\SR09-2020-POP2021\obj\Debug\MainWindow.baml
+C:\Users\Nole\Downloads\SR09-2020-POP2021\SR09-2020-POP2021\obj\Debug\SR09-2020-POP2021.g.resources
+C:\Users\Nole\Downloads\SR09-2020-POP2021\SR09-2020-POP2021\obj\Debug\SR09_2020_POP2021.Properties.Resources.resources
+C:\Users\Nole\Downloads\SR09-2020-POP2021\SR09-2020-POP2021\obj\Debug\SR09-2020-POP2021.csproj.GenerateResource.cache
+C:\Users\Nole\Downloads\SR09-2020-POP2021\SR09-2020-POP2021\obj\Debug\SR09-2020-POP2021.csproj.CoreCompileInputs.cache
+C:\Users\Nole\Downloads\SR09-2020-POP2021\SR09-2020-POP2021\obj\Debug\SR09-2020-POP2021.exe
+C:\Users\Nole\Downloads\SR09-2020-POP2021\SR09-2020-POP2021\obj\Debug\SR09-2020-POP2021.pdb
