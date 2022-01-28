@@ -1,0 +1,19 @@
+﻿<Window x:Class="SR09_2020_POP2021.Windows.LoginReg.PrijavaWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SR09_2020_POP2021.Windows.LoginReg"
+        mc:Ignorable="d"
+          Title="PrijavaWindow" Height="450" Width="800">
+    <Grid>
+        <Label Content="JMBG:" HorizontalAlignment="Left" Height="39" Margin="107,57,0,0" VerticalAlignment="Top" Width="143"/>
+        <TextBox HorizontalAlignment="Left" Height="39" Margin="315,57,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="216"/>
+        <Label Content="Lozinka:" HorizontalAlignment="Left" Margin="107,177,0,0" VerticalAlignment="Top" Width="143" Height="39"/>
+        <TextBox Name="txtUsername" HorizontalAlignment="Left" Height="39" Margin="315,57,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="216"/>
+        <Button Content="Prijava" HorizontalAlignment="Left" Height="60" Margin="107,294,0,0" VerticalAlignment="Top" Width="197" Click="prijava"/>
+        <Button Content="Zatvori" HorizontalAlignment="Left" Height="60" Margin="446,294,0,0" VerticalAlignment="Top" Width="204" Click="close"/>
+        <PasswordBox Name="txtPassword" HorizontalAlignment="Left" VerticalAlignment="Top" Height="39" Margin="315,177,0,0" Width="216"/>
+
+    </Grid>
+</Window>
