@@ -33,16 +33,16 @@ namespace SR09_2020_POP2021.Windows.PregledIzmenaSPodataka
 
             ICollectionView view = CollectionViewSource.GetDefaultView(instruktori);
 
-            PodaciI.ItemsSource = view;
-            PodaciI.IsSynchronizedWithCurrentItem = true;
+            Informacije.ItemsSource = view;
+            Informacije.IsSynchronizedWithCurrentItem = true;
 
-            PodaciI.ColumnWidth = new DataGridLength(1, DataGridLengthUnitType.Star);
+            Informacije.ColumnWidth = new DataGridLength(1, DataGridLengthUnitType.Star);
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            var selektovaniInstruktor = PodaciI.SelectedItem;
-            Instruktor instruktor = (Instruktor)selektovaniInstruktor;
+            var izabraniInstruktor = Informacije.SelectedItem;
+            Instruktor instruktor = (Instruktor)izabraniInstruktor;
             IzmenaPodInstruktora izpi = new IzmenaPodInstruktora(instruktor);
             izpi.Show();
             this.Close();

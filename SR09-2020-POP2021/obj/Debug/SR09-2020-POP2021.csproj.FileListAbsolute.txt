@@ -75,3 +75,7 @@ C:\Users\Nole\Downloads\SR09-2020-POP2021\SR09-2020-POP2021\obj\Debug\Windows\Po
 C:\Users\Nole\Downloads\SR09-2020-POP2021\SR09-2020-POP2021\obj\Debug\Windows\PocetniProzor\FitnesCentarSajt.baml
 C:\Users\Nole\Downloads\SR09-2020-POP2021\SR09-2020-POP2021\obj\Debug\Windows\PocetniProzor\NRGKGlavnaStr.baml
 C:\Users\Nole\Downloads\SR09-2020-POP2021\SR09-2020-POP2021\obj\Debug\Windows\PocetniProzor\NRGKInstruktori.baml
+C:\Users\Nole\Downloads\SR09-2020-POP2021\SR09-2020-POP2021\obj\Debug\Windows\Admin5\DodavanjeTreninga.g.cs
+C:\Users\Nole\Downloads\SR09-2020-POP2021\SR09-2020-POP2021\obj\Debug\Windows\Admin5\IzmenaATreninga.g.cs
+C:\Users\Nole\Downloads\SR09-2020-POP2021\SR09-2020-POP2021\obj\Debug\Windows\Admin5\DodavanjeTreninga.baml
+C:\Users\Nole\Downloads\SR09-2020-POP2021\SR09-2020-POP2021\obj\Debug\Windows\Admin5\IzmenaATreninga.baml

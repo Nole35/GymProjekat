@@ -48,8 +48,8 @@ namespace SR09_2020_POP2021.Windows.Admin5
 
         private void izmeni(object sender, RoutedEventArgs e)
         {
-            var selektovaniTrening = Informacije.SelectedItem;
-            Trening trening = (Trening)selektovaniTrening;
+            var izabraniTrening = Informacije.SelectedItem;
+            Trening trening = (Trening)izabraniTrening;
             IzmenaATreninga iat = new IzmenaATreninga(trening);
             iat.Show();
             this.Close();

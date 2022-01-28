@@ -22,11 +22,11 @@ namespace SR09_2020_POP2021.Windows.PregledIzmenaSPodataka
     /// </summary>
     public partial class IzmeniPodatke : Window
     {
-        private Admin prosledjeniAdmin;
+        private Admin dodeljeniAdmin;
         public IzmeniPodatke(Admin admin)
         {
             InitializeComponent();
-            this.prosledjeniAdmin = admin;
+            this.dodeljeniAdmin = admin;
             txtIme.DataContext = admin;
             txtPrez.DataContext = admin;
             txtEmail.DataContext = admin;
@@ -53,15 +53,15 @@ namespace SR09_2020_POP2021.Windows.PregledIzmenaSPodataka
             EPol pol = (EPol)Enum.Parse(typeof(EPol), polString, true);
             string adresaString = cbAdrese.SelectedItem.ToString();
             int adresaID = int.Parse(adresaString);
-            prosledjeniAdmin.Ime = ime;
-            prosledjeniAdmin.Prezime = prezime;
-            prosledjeniAdmin.Email = email;
-            prosledjeniAdmin.Lozinka = lozinka;
-            prosledjeniAdmin.Pol = pol;
-            prosledjeniAdmin.AdresaId = adresaID;
-            Utill.Instance.updateAdmin(prosledjeniAdmin);
+            dodeljeniAdmin.Ime = ime;
+            dodeljeniAdmin.Prezime = prezime;
+            dodeljeniAdmin.Email = email;
+            dodeljeniAdmin.Lozinka = lozinka;
+            dodeljeniAdmin.Pol = pol;
+            dodeljeniAdmin.AdresaId = adresaID;
+            Utill.Instance.updateAdmin(dodeljeniAdmin);
             MessageBox.Show("Izmena Uspesna");
-            PregledPodataka pregled = new PregledPodataka(prosledjeniAdmin.JMBG);
+            PregledPodataka pregled = new PregledPodataka(dodeljeniAdmin.JMBG);
             pregled.Show();
             this.Close();
         }

@@ -23,11 +23,11 @@ namespace SR09_2020_POP2021.Windows.Admin5
     /// </summary>
     public partial class AdminWindow : Window
     {
-        private string prosledjeniJmbg;
+        private string datiJmbg;
         public AdminWindow(string jmbg)
         {
             InitializeComponent();
-            this.prosledjeniJmbg = jmbg;
+            this.datiJmbg = jmbg;
         }
 
        /* private void MenuItem_Click(object sender, RoutedEventArgs e)
@@ -39,7 +39,7 @@ namespace SR09_2020_POP2021.Windows.Admin5
 
         private void pregledPodataka(object sender, RoutedEventArgs e)
         {
-            PregledPodataka podataka = new PregledPodataka(prosledjeniJmbg);
+            PregledPodataka podataka = new PregledPodataka(datiJmbg);
             podataka.Show();
             this.Close();
         }

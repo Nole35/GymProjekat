@@ -20,11 +20,11 @@ namespace SR09_2020_POP2021.Windows.Admin5
     /// </summary>
     public partial class IzmenaATreninga : Window
     {
-        private Trening prosledjeniTrening;
+        private Trening dodeljeniTrening;
         public IzmenaATreninga(Trening trening)
         {
             InitializeComponent();
-            this.prosledjeniTrening = trening;
+            this.dodeljeniTrening = trening;
             txtSifra.DataContext = trening;
             txtVreme.DataContext = trening;
             txtTrajanje.DataContext = trening;
@@ -46,7 +46,7 @@ namespace SR09_2020_POP2021.Windows.Admin5
             int insId = int.Parse(txtInId.Text.ToString());
             int polId = int.Parse(txtPolId.Text.ToString());
             DateTime datum = DateTime.Parse(txtDatum.Text.ToString());
-            Utill.Instance.updateTrening(prosledjeniTrening);
+            Utill.Instance.updateTrening(dodeljeniTrening);
             MessageBox.Show("Izmena Uspesna");
             ATreninziWindow atw = new ATreninziWindow();
             atw.Show();

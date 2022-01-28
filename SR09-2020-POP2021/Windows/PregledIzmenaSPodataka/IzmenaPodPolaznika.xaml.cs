@@ -22,11 +22,11 @@ namespace SR09_2020_POP2021.Windows.PregledIzmenaSPodataka
     /// </summary>
     public partial class IzmenaPodPolaznika : Window
     {
-        private Polaznik prosledjeniPolaznik;
+        private Polaznik dodeljeniPolaznik;
         public IzmenaPodPolaznika(Polaznik polaznik)
         {
             InitializeComponent();
-            this.prosledjeniPolaznik = polaznik;
+            this.dodeljeniPolaznik = polaznik;
             txtIme.DataContext = polaznik;
             txtPrez.DataContext = polaznik;
             txtEmail.DataContext = polaznik;
@@ -54,14 +54,14 @@ namespace SR09_2020_POP2021.Windows.PregledIzmenaSPodataka
             EPol pol = (EPol)Enum.Parse(typeof(EPol), polString, true);
             string adresaString = cbAdrese.SelectedItem.ToString();
             int adresaID = int.Parse(adresaString);
-            prosledjeniPolaznik.Ime = ime;
-            prosledjeniPolaznik.Prezime = prezime;
-            prosledjeniPolaznik.Email = email;
-            prosledjeniPolaznik.Pol = pol;
-            prosledjeniPolaznik.AdresaId = adresaID;
-            Utill.Instance.updatePolaznik(prosledjeniPolaznik);
+            dodeljeniPolaznik.Ime = ime;
+            dodeljeniPolaznik.Prezime = prezime;
+            dodeljeniPolaznik.Email = email;
+            dodeljeniPolaznik.Pol = pol;
+            dodeljeniPolaznik.AdresaId = adresaID;
+            Utill.Instance.updatePolaznik(dodeljeniPolaznik);
             MessageBox.Show("Izmena Uspesna");
-            PregledPodPolaznika pregled = new PregledPodPolaznika(prosledjeniPolaznik.JMBG);
+            PregledPodPolaznika pregled = new PregledPodPolaznika(dodeljeniPolaznik.JMBG);
             pregled.Show();
             this.Close();
         }

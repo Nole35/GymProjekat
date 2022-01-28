@@ -43,16 +43,16 @@ namespace SR09_2020_POP2021.Windows.Admin5
 
         private void obrisi(object sender, RoutedEventArgs e)
         {
-            var selektovaniInstruktor = Informacije.SelectedItem;
-            Instruktor instruktor = (Instruktor)selektovaniInstruktor;
+            var izabraniInstruktor = Informacije.SelectedItem;
+            Instruktor instruktor = (Instruktor)izabraniInstruktor;
             Utill.Instance.DeleteInstruktor(instruktor.Id);
             Utill.Instance.Instruktori.Remove(instruktor);
         }
 
         private void izmeni(object sender, RoutedEventArgs e)
         {
-            var selektovaniInstruktor = Informacije.SelectedItem;
-            Instruktor instruktor = (Instruktor)selektovaniInstruktor;
+            var izabraniInstruktor = Informacije.SelectedItem;
+            Instruktor instruktor = (Instruktor)izabraniInstruktor;
             IzmenaAInstruktora izmeni = new IzmenaAInstruktora(instruktor);
             izmeni.Show();
             this.Close();

@@ -20,11 +20,11 @@ namespace SR09_2020_POP2021.Windows.Admin5
     /// </summary>
     public partial class IzmenaAAdrese : Window
     {
-        private Adresa prosledjenaAdresa;
+        private Adresa dodeljenaAdresa;
         public IzmenaAAdrese(Adresa adresa)
         {
             InitializeComponent();
-            this.prosledjenaAdresa = adresa;
+            this.dodeljenaAdresa = adresa;
             txtUl.DataContext = adresa;
             txtBr.DataContext = adresa;
             txtGr.DataContext = adresa;
@@ -38,12 +38,12 @@ namespace SR09_2020_POP2021.Windows.Admin5
             string grad = txtGr.Text;
             string drzava = txtDrz.Text;
 
-            prosledjenaAdresa.Ulica = ulica;
-            prosledjenaAdresa.Broj = broj;
-            prosledjenaAdresa.Grad = grad;
-            prosledjenaAdresa.Drzava = drzava;
+            dodeljenaAdresa.Ulica = ulica;
+            dodeljenaAdresa.Broj = broj;
+            dodeljenaAdresa.Grad = grad;
+            dodeljenaAdresa.Drzava = drzava;
 
-            Utill.Instance.updateAdresa(prosledjenaAdresa);
+            Utill.Instance.updateAdresa(dodeljenaAdresa);
             MessageBox.Show("Izmena Uspesna");
             AAdresaWindow pregled = new AAdresaWindow();
             pregled.Show();

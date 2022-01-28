@@ -21,11 +21,11 @@ namespace SR09_2020_POP2021.Windows.Admin5
     /// </summary>
     public partial class IzmenaAPolaznika : Window
     {
-        private Polaznik prosledjeniPolaznik;
+        private Polaznik dodeljeniPolaznik;
         public IzmenaAPolaznika(Polaznik polaznik)
         {
             InitializeComponent();
-            this.prosledjeniPolaznik = polaznik;
+            this.dodeljeniPolaznik = polaznik;
             txtIme.DataContext = polaznik;
             txtPrez.DataContext = polaznik;
             txtEmail.DataContext = polaznik;
@@ -54,13 +54,13 @@ namespace SR09_2020_POP2021.Windows.Admin5
             EPol pol = (EPol)Enum.Parse(typeof(EPol), polString, true);
             string adresaString = cbAdrese.SelectedItem.ToString();
             int adresaID = int.Parse(adresaString);
-            prosledjeniPolaznik.Ime = ime;
-            prosledjeniPolaznik.Prezime = prezime;
-            prosledjeniPolaznik.Email = email;
-            prosledjeniPolaznik.Lozinka = lozinka;
-            prosledjeniPolaznik.Pol = pol;
-            prosledjeniPolaznik.AdresaId = adresaID;
-            Utill.Instance.updatePolaznik(prosledjeniPolaznik);
+            dodeljeniPolaznik.Ime = ime;
+            dodeljeniPolaznik.Prezime = prezime;
+            dodeljeniPolaznik.Email = email;
+            dodeljeniPolaznik.Lozinka = lozinka;
+            dodeljeniPolaznik.Pol = pol;
+            dodeljeniPolaznik.AdresaId = adresaID;
+            Utill.Instance.updatePolaznik(dodeljeniPolaznik);
             MessageBox.Show("Izmena Uspesna");
             APolazniciWindow paw = new APolazniciWindow();
             paw.Show();

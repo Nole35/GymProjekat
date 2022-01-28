@@ -22,11 +22,11 @@ namespace SR09_2020_POP2021.Windows.Admin5
     public partial class IzmenaAInstruktora : Window
 
     {
-        private Instruktor prosledjeniInstruktor;
+        private Instruktor dodeljeniInstruktor;
         public IzmenaAInstruktora(Instruktor instruktor)
         {
             InitializeComponent();
-            this.prosledjeniInstruktor = instruktor;
+            this.dodeljeniInstruktor = instruktor;
             txtIme.DataContext = instruktor;
             txtPrez.DataContext = instruktor;
             txtEmail.DataContext = instruktor;
@@ -54,13 +54,13 @@ namespace SR09_2020_POP2021.Windows.Admin5
             EPol pol = (EPol)Enum.Parse(typeof(EPol), polString, true);
             string adresaString = cbAdrese.SelectedItem.ToString();
             int adresaID = int.Parse(adresaString);
-            prosledjeniInstruktor.Ime = ime;
-            prosledjeniInstruktor.Prezime = prezime;
-            prosledjeniInstruktor.Email = email;
-            prosledjeniInstruktor.Lozinka = lozinka;
-            prosledjeniInstruktor.Pol = pol;
-            prosledjeniInstruktor.AdresaId = adresaID;
-            Utill.Instance.updateInstruktor(prosledjeniInstruktor);
+            dodeljeniInstruktor.Ime = ime;
+            dodeljeniInstruktor.Prezime = prezime;
+            dodeljeniInstruktor.Email = email;
+            dodeljeniInstruktor.Lozinka = lozinka;
+            dodeljeniInstruktor.Pol = pol;
+            dodeljeniInstruktor.AdresaId = adresaID;
+            Utill.Instance.updateInstruktor(dodeljeniInstruktor);
             MessageBox.Show("Izmena Uspesna");
             AInstruktoriWindow iaw = new AInstruktoriWindow();
             iaw.Show();

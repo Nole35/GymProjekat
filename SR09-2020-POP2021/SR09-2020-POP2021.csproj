@@ -98,6 +98,9 @@
     <Compile Include="Windows\Admin5\DodavanjePolaznika.xaml.cs">
       <DependentUpon>DodavanjePolaznika.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Windows\Admin5\DodavanjeTreninga.xaml.cs">
+      <DependentUpon>DodavanjeTreninga.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Windows\Admin5\IzmenaAAdrese.xaml.cs">
       <DependentUpon>IzmenaAAdrese.xaml</DependentUpon>
     </Compile>
@@ -109,6 +112,9 @@
     </Compile>
     <Compile Include="Windows\Admin5\IzmenaAPolaznika.xaml.cs">
       <DependentUpon>IzmenaAPolaznika.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\Admin5\IzmenaATreninga.xaml.cs">
+      <DependentUpon>IzmenaATreninga.xaml</DependentUpon>
     </Compile>
     <Compile Include="Windows\Instructors\InstruktorWindow.xaml.cs">
       <DependentUpon>InstruktorWindow.xaml</DependentUpon>
@@ -213,6 +219,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Windows\Admin5\DodavanjeTreninga.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Windows\Admin5\IzmenaAAdrese.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -226,6 +236,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Windows\Admin5\IzmenaAPolaznika.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\Admin5\IzmenaATreninga.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

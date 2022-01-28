@@ -20,11 +20,11 @@ namespace SR09_2020_POP2021.Windows.Admin5
     /// </summary>
     public partial class IzmenaAFC : Window
     {
-        private FitnesCentar prosledjenFitnesCentar;
+        private FitnesCentar dodeljeniFitnesCentar;
         public IzmenaAFC(FitnesCentar fitnes)
         {
             InitializeComponent();
-            this.prosledjenFitnesCentar = fitnes;
+            this.dodeljeniFitnesCentar = fitnes;
             txtNaz.DataContext = fitnes;
         }
 
@@ -33,8 +33,8 @@ namespace SR09_2020_POP2021.Windows.Admin5
             string naziv = txtNaz.Text;
 
 
-            prosledjenFitnesCentar.Naziv = naziv;
-            Utill.Instance.updateFitnesCentar(prosledjenFitnesCentar);
+            dodeljeniFitnesCentar.Naziv = naziv;
+            Utill.Instance.updateFitnesCentar(dodeljeniFitnesCentar);
             MessageBox.Show("Izmena Uspesna");
             AFitnesCentarWindow pregled = new AFitnesCentarWindow();
             pregled.Show();

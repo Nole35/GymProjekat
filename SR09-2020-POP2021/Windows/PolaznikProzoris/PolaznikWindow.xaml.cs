@@ -21,11 +21,11 @@ namespace SR09_2020_POP2021.Windows.PolaznikProzoris
     /// </summary>
     public partial class PolaznikWindow : Window
     {
-        string prosledjeniJmbg;
+        string dodeljeniJmbg;
         public PolaznikWindow(string jmbg)
         {
             InitializeComponent();
-            this.prosledjeniJmbg = jmbg;
+            this.dodeljeniJmbg = jmbg;
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
@@ -37,7 +37,7 @@ namespace SR09_2020_POP2021.Windows.PolaznikProzoris
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-            PregledPodPolaznika ppp = new PregledPodPolaznika(prosledjeniJmbg);
+            PregledPodPolaznika ppp = new PregledPodPolaznika(dodeljeniJmbg);
             ppp.Show();
             this.Close();
         }

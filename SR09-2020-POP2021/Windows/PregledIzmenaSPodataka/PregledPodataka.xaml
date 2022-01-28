@@ -7,7 +7,7 @@
         mc:Ignorable="d"
       Title="PregledPodataka" Height="450" Width="800">
     <Grid>
-        <DataGrid SelectedItem="{Binding Path=selektovan}" Name="svojiPodaci" HorizontalAlignment="Left" Height="132" VerticalAlignment="Top" Width="577" Margin="106,104,0,0"/>
+        <DataGrid SelectedItem="{Binding Path=izabran}" Name="Informacije" HorizontalAlignment="Left" Height="132" VerticalAlignment="Top" Width="577" Margin="106,104,0,0"/>
         <Button Content="IZMENI" HorizontalAlignment="Left" Margin="324,311,0,0" VerticalAlignment="Top" Width="107" Height="44" Click="Button_Click"/>
 
     </Grid>

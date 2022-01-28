@@ -23,11 +23,11 @@ namespace SR09_2020_POP2021.Windows.PregledIzmenaSPodataka
     /// </summary>
     public partial class IzmenaPodInstruktora : Window
     {
-        private Instruktor prosledjeniInstruktor;
+        private Instruktor dodeljeniInstruktor;
         public IzmenaPodInstruktora(Instruktor instruktor)
         {
             InitializeComponent();
-            this.prosledjeniInstruktor = instruktor;
+            this.dodeljeniInstruktor = instruktor;
             txtIme.DataContext = instruktor;
             txtPrez.DataContext = instruktor;
             txtEmail.DataContext = instruktor;
@@ -54,15 +54,15 @@ namespace SR09_2020_POP2021.Windows.PregledIzmenaSPodataka
             EPol pol = (EPol)Enum.Parse(typeof(EPol), polString, true);
             string adresaString = cbAdrese.SelectedItem.ToString();
             int adresaID = int.Parse(adresaString);
-            prosledjeniInstruktor.Ime = ime;
-            prosledjeniInstruktor.Prezime = prezime;
-            prosledjeniInstruktor.Email = email;
-            prosledjeniInstruktor.Lozinka = lozinka;
-            prosledjeniInstruktor.Pol = pol;
-            prosledjeniInstruktor.AdresaId = adresaID;
-            Utill.Instance.updateInstruktor(prosledjeniInstruktor);
+            dodeljeniInstruktor.Ime = ime;
+            dodeljeniInstruktor.Prezime = prezime;
+            dodeljeniInstruktor.Email = email;
+            dodeljeniInstruktor.Lozinka = lozinka;
+            dodeljeniInstruktor.Pol = pol;
+            dodeljeniInstruktor.AdresaId = adresaID;
+            Utill.Instance.updateInstruktor(dodeljeniInstruktor);
             MessageBox.Show("Izmena Uspesna");
-            PregledPodInstruktora pregled = new PregledPodInstruktora(prosledjeniInstruktor.JMBG);
+            PregledPodInstruktora pregled = new PregledPodInstruktora(dodeljeniInstruktor.JMBG);
             pregled.Show();
             this.Close();
         }

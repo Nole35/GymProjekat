@@ -33,16 +33,16 @@ namespace SR09_2020_POP2021.Windows.PregledIzmenaSPodataka
 
             ICollectionView view = CollectionViewSource.GetDefaultView(admini);
 
-            svojiPodaci.ItemsSource = view;
-            svojiPodaci.IsSynchronizedWithCurrentItem = true;
+            Informacije.ItemsSource = view;
+            Informacije.IsSynchronizedWithCurrentItem = true;
 
-            svojiPodaci.ColumnWidth = new DataGridLength(1, DataGridLengthUnitType.Star);
+            Informacije.ColumnWidth = new DataGridLength(1, DataGridLengthUnitType.Star);
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            var selektovaniAdmin = svojiPodaci.SelectedItem;
-            Admin admin = (Admin)selektovaniAdmin;
+            var izabraniAdmin = Informacije.SelectedItem;
+            Admin admin = (Admin)izabraniAdmin;
             IzmeniPodatke izmeni = new IzmeniPodatke(admin);
             izmeni.Show();
             this.Close();

@@ -45,16 +45,16 @@ namespace SR09_2020_POP2021.Windows.Admin5
 
         private void obrisi(object sender, RoutedEventArgs e)
         {
-            var selektovanaAdresa = Informacije.SelectedItem;
-            Adresa adresa = (Adresa)selektovanaAdresa;
+            var izabranaAdresa = Informacije.SelectedItem;
+            Adresa adresa = (Adresa)izabranaAdresa;
             Utill.Instance.DeleteAdresa(adresa.SifraAdrese);
             Utill.Instance.Adrese.Remove(adresa);
         }
 
         private void izmeni(object sender, RoutedEventArgs e)
         {
-            var selektovanaAdresa = Informacije.SelectedItem;
-            Adresa adresa = (Adresa)selektovanaAdresa;
+            var izabranaAdresa = Informacije.SelectedItem;
+            Adresa adresa = (Adresa)izabranaAdresa;
             IzmenaAAdrese izmeni = new IzmenaAAdrese(adresa);
             izmeni.Show();
             this.Close();

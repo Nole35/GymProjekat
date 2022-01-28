@@ -17,7 +17,7 @@ namespace SR09_2020_POP2021.Model
             set { _id = value; }
         }
 
-        public Instruktor() {
+        public Instruktor(){
         
         }
         public Instruktor(int id, string ime, string prezime, string lozinka, string email, string jMBG, int adresaId, EPol pol, bool aktivan)

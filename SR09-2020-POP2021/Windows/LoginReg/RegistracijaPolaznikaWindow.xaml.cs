@@ -37,7 +37,7 @@ namespace SR09_2020_POP2021.Windows.LoginReg
             }
         }
 
-        private void registracijaDugme(object sender, RoutedEventArgs e)
+        private void registracijaButton(object sender, RoutedEventArgs e)
         {
             string ime = txtIme.Text;
             string prezime = txtPrez.Text;

@@ -21,11 +21,11 @@ namespace SR09_2020_POP2021.Windows.Instructors
     /// </summary>
     public partial class InstruktorWindow : Window
     {
-        string prosledjeniJmbg;
+        string dodeljeniJmbg;
         public InstruktorWindow(string jmbg)
         {
             InitializeComponent();
-            this.prosledjeniJmbg = jmbg;
+            this.dodeljeniJmbg = jmbg;
         }
 
         private void pregledPolaznika(object sender, RoutedEventArgs e)
@@ -35,7 +35,7 @@ namespace SR09_2020_POP2021.Windows.Instructors
 
         private void pregledPodataka(object sender, RoutedEventArgs e)
         {
-            PregledPodInstruktora ppi = new PregledPodInstruktora(prosledjeniJmbg);
+            PregledPodInstruktora ppi = new PregledPodInstruktora(dodeljeniJmbg);
             ppi.Show();
             this.Close();
         }

@@ -43,16 +43,16 @@ namespace SR09_2020_POP2021.Windows.Admin5
 
         private void obrisi(object sender, RoutedEventArgs e)
         {
-            var selektovaniFitnes = Informacije.SelectedItem;
-            FitnesCentar fitnes = (FitnesCentar)selektovaniFitnes;
+            var izabraniFitnes = Informacije.SelectedItem;
+            FitnesCentar fitnes = (FitnesCentar)izabraniFitnes;
             Utill.Instance.DeleteFitnesCentar(fitnes.Sifra);
             Utill.Instance.FitnesCentri.Remove(fitnes);
         }
 
         private void izmeni(object sender, RoutedEventArgs e)
         {
-            var selektovanFitnes = Informacije.SelectedItem;
-            FitnesCentar fitnes = (FitnesCentar)selektovanFitnes;
+            var izabraniFitnes = Informacije.SelectedItem;
+            FitnesCentar fitnes = (FitnesCentar)izabraniFitnes;
             IzmenaAFC ipfc = new IzmenaAFC(fitnes);
             ipfc.Show();
             this.Close();

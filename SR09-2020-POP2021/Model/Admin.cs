@@ -102,5 +102,23 @@ namespace SR09_2020_POP2021.Model
 
             return kopija;
         }
+
+        public Admin()
+        {
+
+        }
+
+        public Admin(int id, string ime, string prezime, string lozinka, string email, string jMBG, int adresaId, EPol pol, bool aktivan)
+        {
+            _id = id;
+            _ime = ime;
+            _prezime = prezime;
+            _lozinka = lozinka;
+            _email = email;
+            _JMBG = jMBG;
+            this.adresaId = adresaId;
+            _pol = pol;
+            this.aktivan = aktivan;
+        }
     }
 }
