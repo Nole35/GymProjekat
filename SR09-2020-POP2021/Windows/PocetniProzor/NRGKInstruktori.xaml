@@ -7,8 +7,8 @@
         mc:Ignorable="d"
   Title="NInstruktoriWindow" Height="450" Width="800">
     <Grid>
-        <DataGrid Name="instruktori" HorizontalAlignment="Left" Height="91" VerticalAlignment="Top" Width="582" Margin="119,75,0,0"/>
-        <Button Content="CLOSE&#xD;&#xA;" HorizontalAlignment="Left" VerticalAlignment="Top" Width="137" Margin="119,249,0,0" Height="62" Click="Button_Click"/>
+        <DataGrid Name="instruktori" HorizontalAlignment="Left" Height="91" VerticalAlignment="Top" Width="582" Margin="117,155,0,0"/>
+        <Button Content="CLOSE&#xD;&#xA;" HorizontalAlignment="Left" VerticalAlignment="Top" Width="137" Margin="647,348,0,0" Height="62" Click="Button_Click"/>
 
     </Grid>
 </Window>

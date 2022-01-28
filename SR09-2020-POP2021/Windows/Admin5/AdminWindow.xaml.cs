@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using SR09_2020_POP2021.Model;
+using SR09_2020_POP2021.Windows.PocetniProzor;
 using SR09_2020_POP2021.Windows.PregledIzmenaSPodataka;
 using SR09_2020_POP2021.Windows.Pretraga;
 
@@ -73,12 +74,16 @@ namespace SR09_2020_POP2021.Windows.Admin5
 
         private void Button_Click_4(object sender, RoutedEventArgs e)
         {
-
+            FitnesCentarSajt fcs = new FitnesCentarSajt();
+            fcs.Show();
+            this.Close();
         }
 
         private void Button_Click_5(object sender, RoutedEventArgs e)
         {
-
+            FitnesCentarSajt fcs = new FitnesCentarSajt();
+            fcs.Show();
+            this.Close();
         }
 
         private void Button_Click_6(object sender, RoutedEventArgs e)

@@ -1,4 +1,5 @@
-﻿using SR09_2020_POP2021.Windows.PregledIzmenaSPodataka;
+﻿using SR09_2020_POP2021.Windows.PocetniProzor;
+using SR09_2020_POP2021.Windows.PregledIzmenaSPodataka;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -42,6 +43,13 @@ namespace SR09_2020_POP2021.Windows.Instructors
         private void pregledTreninga(object sender, RoutedEventArgs e)
         {
 
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            FitnesCentarSajt fcs = new FitnesCentarSajt();
+            fcs.Show();
+            this.Close();
         }
     }
 }

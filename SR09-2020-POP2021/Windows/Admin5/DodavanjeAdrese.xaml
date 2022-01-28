@@ -17,8 +17,8 @@
         <TextBox x:Name="txtGr" HorizontalAlignment="Left" Height="30" Margin="180,201,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
         <Label Content="Drzava" HorizontalAlignment="Left" Height="30" Margin="75,261,0,0" VerticalAlignment="Top" Width="100"/>
         <TextBox x:Name="txtDrz" HorizontalAlignment="Left" Height="30" Margin="180,261,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <Button Content="DODAJ" HorizontalAlignment="Left" VerticalAlignment="Top" Width="169" Margin="491,71,0,0" Height="56" Click="dodaj"/>
-        <Button Content="ZATVORI" HorizontalAlignment="Left" VerticalAlignment="Top" Width="169" Margin="491,235,0,0" Height="56" Click="close"/>
+        <Button Content="DODAJ" HorizontalAlignment="Left" VerticalAlignment="Top" Width="169" Margin="75,331,0,0" Height="56" Click="dodaj"/>
+        <Button Content="ZATVORI" HorizontalAlignment="Left" VerticalAlignment="Top" Width="169" Margin="625,364,-0.4,0" Height="56" Click="close"/>
 
     </Grid>
 </Window>

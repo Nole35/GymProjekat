@@ -27,7 +27,7 @@
             <ComboBox Name="cbAdress"  HorizontalAlignment="Left" Height="22" Margin="180,280,0,0" VerticalAlignment="Top" Width="116"/>
 
         </Grid>
-        <Button Content="DODAJ" HorizontalAlignment="Left" VerticalAlignment="Top" Width="169" Margin="479,126,0,0" Height="56" Click="dodaj"/>
-        <Button Content="ZATVORI" HorizontalAlignment="Left" VerticalAlignment="Top" Width="169" Margin="479,290,0,0" Height="56" Click="close"/>
+        <Button Content="DODAJ" HorizontalAlignment="Left" VerticalAlignment="Top" Width="169" Margin="404,364,0,0" Height="56" Click="dodaj"/>
+        <Button Content="ZATVORI" HorizontalAlignment="Left" VerticalAlignment="Top" Width="169" Margin="625,364,-0.4,0" Height="56" Click="close"/>
     </Grid>
 </Window>

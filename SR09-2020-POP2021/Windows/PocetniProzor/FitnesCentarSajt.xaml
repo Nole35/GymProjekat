@@ -7,9 +7,9 @@
         mc:Ignorable="d"
      Title="Fitnes Centar" Height="450" Width="800">
     <Grid>
-        <Button Click="btnPrijava_Click" Content="PRIJAVA" HorizontalAlignment="Left" Height="98" Margin="121,167,0,0" VerticalAlignment="Top" Width="187"/>
-        <Button Content="INFO FITNES CENTRA" HorizontalAlignment="Left" Height="98" Margin="523,167,0,0" VerticalAlignment="Top" Width="161" Click="Button_Click_1"/>
-        <Button Content="REGISTRACIJA NOVOG POLAZNIKA" HorizontalAlignment="Left" Height="98" Margin="336,167,0,0" VerticalAlignment="Top" Width="164" Click="registracija"/>
+        <Button Click="btnPrijava_Click" Content="PRIJAVA" HorizontalAlignment="Left" Height="98" VerticalAlignment="Top" Width="187"/>
+        <Button Content="INFO FITNES CENTRA" HorizontalAlignment="Left" Height="98" Margin="339,158,0,0" VerticalAlignment="Top" Width="161" Click="Button_Click_1"/>
+        <Button Content="REGISTRACIJA NOVOG POLAZNIKA" HorizontalAlignment="Left" Height="98" Margin="630,0,-0.4,0" VerticalAlignment="Top" Width="164" Click="registracija"/>
         <Button Click="pretraga" Content="PRETRAGA INSTRUKTORA" HorizontalAlignment="Left" Height="98" Margin="336,293,0,0" VerticalAlignment="Top" Width="164"/>
 
     </Grid>

@@ -33,5 +33,10 @@ namespace SR09_2020_POP2021.Windows.Pretraga
 
             prikazRezultataPretrage.ColumnWidth = new DataGridLength(1, DataGridLengthUnitType.Star);
         }
+
+        private void prikazRezultataPretrage_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
     }
 }

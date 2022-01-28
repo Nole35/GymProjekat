@@ -1,4 +1,5 @@
-﻿using SR09_2020_POP2021.Windows.PregledIzmenaSPodataka;
+﻿using SR09_2020_POP2021.Windows.PocetniProzor;
+using SR09_2020_POP2021.Windows.PregledIzmenaSPodataka;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -29,7 +30,9 @@ namespace SR09_2020_POP2021.Windows.PolaznikProzoris
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-
+            FitnesCentarSajt fcs = new FitnesCentarSajt();
+            fcs.Show();
+            this.Close();
         }
 
         private void Button_Click_1(object sender, RoutedEventArgs e)

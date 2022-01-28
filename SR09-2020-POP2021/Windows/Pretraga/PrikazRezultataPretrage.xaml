@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="PrikazRezultataPretrage" Height="450" Width="800">
     <Grid>
-        <DataGrid Name="prikazRezultataPretrage" HorizontalAlignment="Left" Height="150" VerticalAlignment="Top" Width="571" Margin="91,112,0,0"/>
+        <DataGrid Name="prikazRezultataPretrage" HorizontalAlignment="Left" Height="150" VerticalAlignment="Top" Width="571" Margin="91,112,0,0" SelectionChanged="prikazRezultataPretrage_SelectionChanged"/>
 
     </Grid>
 </Window>

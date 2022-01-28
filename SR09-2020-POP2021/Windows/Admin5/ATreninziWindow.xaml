@@ -7,10 +7,10 @@
         mc:Ignorable="d"
         Title="ATreninziWindow" Height="450" Width="800">
     <Grid>
-        <DataGrid SelectedItem="{Binding Path=selektovan}" Name="Informacije" HorizontalAlignment="Left" Height="132" VerticalAlignment="Top" Width="577" Margin="80,99,0,0"/>
-        <Button Click="dodaj" Content="DODAJ TRENING" HorizontalAlignment="Left" Height="79" Margin="32,312,0,0" VerticalAlignment="Top" Width="148"/>
-        <Button Click="obrisi" Content="OBRISI TRENING" HorizontalAlignment="Left" Height="79" Margin="233,312,0,0" VerticalAlignment="Top" Width="147"/>
-        <Button Click="izmeni" Content="IZMENI TRENING" HorizontalAlignment="Left" Height="79" Margin="419,312,0,0" VerticalAlignment="Top" Width="148"/>
-        <Button Click="close" Content="ZATVORI" HorizontalAlignment="Left" Height="79" Margin="613,312,0,0" VerticalAlignment="Top" Width="148"/>
+        <DataGrid SelectedItem="{Binding Path=selektovan}" Name="Informacije" HorizontalAlignment="Left" Height="132" VerticalAlignment="Top" Width="577" Margin="104,150,0,0"/>
+        <Button Click="dodaj" Content="DODAJ TRENING" HorizontalAlignment="Left" Height="79" VerticalAlignment="Top" Width="148"/>
+        <Button Click="obrisi" Content="OBRISI TRENING" HorizontalAlignment="Left" Height="79" Margin="1,341,0,0" VerticalAlignment="Top" Width="147"/>
+        <Button Click="izmeni" Content="IZMENI TRENING" HorizontalAlignment="Left" Height="79" Margin="646,0,-0.4,0" VerticalAlignment="Top" Width="148"/>
+        <Button Click="close" Content="ZATVORI" HorizontalAlignment="Left" Height="79" Margin="636,341,0,0" VerticalAlignment="Top" Width="148"/>
     </Grid>
 </Window>

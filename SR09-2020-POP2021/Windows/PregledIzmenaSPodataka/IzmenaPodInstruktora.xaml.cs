@@ -14,6 +14,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using SR09_2020_POP2021.Model;
 using SR09_2020_POP2021.Windows;
+using SR09_2020_POP2021.Windows.PocetniProzor;
 
 namespace SR09_2020_POP2021.Windows.PregledIzmenaSPodataka
 {
@@ -64,6 +65,14 @@ namespace SR09_2020_POP2021.Windows.PregledIzmenaSPodataka
             PregledPodInstruktora pregled = new PregledPodInstruktora(prosledjeniInstruktor.JMBG);
             pregled.Show();
             this.Close();
+        }
+
+        private void Button_Click_5(object sender, RoutedEventArgs e)
+        {
+            FitnesCentarSajt fcs = new FitnesCentarSajt();
+            fcs.Show();
+            this.Close();
+
         }
     }
 }

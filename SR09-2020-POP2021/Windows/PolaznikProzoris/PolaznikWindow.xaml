@@ -8,9 +8,8 @@
        Title="PolaznikWindow" Height="450" Width="800">
     <Grid>
         <Button Content="PREGLED PODATAKA" HorizontalAlignment="Left" Height="63" Margin="46,49,0,0" VerticalAlignment="Top" Width="283" Click="Button_Click_1"/>
-        <Button Content="PRETRAZI INSTRUKTORA" HorizontalAlignment="Left" Height="64" Margin="46,291,0,0" VerticalAlignment="Top" Width="283"/>
-        <Button Content="PREGLED INSTRUKTORA" HorizontalAlignment="Left" Height="64" Margin="448,49,0,0" VerticalAlignment="Top" Width="283"/>
-        <Button Content="ZATVORI" HorizontalAlignment="Left" Height="64" Margin="448,291,0,0" VerticalAlignment="Top" Width="283" Click="Button_Click"/>
+        <Button Content="PREGLED INSTRUKTORA" HorizontalAlignment="Left" Height="64" Margin="249,159,0,0" VerticalAlignment="Top" Width="283"/>
+        <Button Content="ODJAVA" HorizontalAlignment="Left" Height="64" Margin="448,291,0,0" VerticalAlignment="Top" Width="283" Click="Button_Click"/>
 
     </Grid>
 </Window>

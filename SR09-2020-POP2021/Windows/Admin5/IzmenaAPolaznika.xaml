@@ -10,15 +10,15 @@
         <Label Content="Ime" HorizontalAlignment="Left" VerticalAlignment="Top" Height="41" Width="133" Margin="43,41,0,0"/>
         <Label Content="Prezime" HorizontalAlignment="Left" VerticalAlignment="Top" Height="41" Width="133" Margin="43,110,0,0"/>
         <Label Content="Email" HorizontalAlignment="Left" VerticalAlignment="Top" Height="41" Width="133" Margin="43,179,0,0" RenderTransformOrigin="0.571,2.813"/>
-        <Label Content="Lozinka" HorizontalAlignment="Left" VerticalAlignment="Top" Height="41" Width="133" Margin="370,161,0,0"/>
+        <Label Content="Lozinka" HorizontalAlignment="Left" VerticalAlignment="Top" Height="41" Width="133" Margin="32,365,0,0"/>
         <Label Content="Pol" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="43,0,0,133" Height="40" Width="74"/>
         <TextBox Text="{Binding Path=Ime}" Name="txtIme" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="176,41,0,0"/>
         <TextBox Text="{Binding Path=Prezime}" Name="txtPrez" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="176,114,0,0"/>
         <TextBox Text="{Binding Path=Email}" Name="txtEmail" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="176,179,0,0"/>
-        <TextBox Text="{Binding Path=Pass}" Name="txtPass" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="481,161,0,0" RenderTransformOrigin="2.707,5.932"/>
+        <TextBox Text="{Binding Path=Pass}" Name="txtPass" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="176,365,0,0" RenderTransformOrigin="2.707,5.932"/>
         <ComboBox Name="cbPol" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Margin="176,247,0,0"/>
-        <Button Content="IZMENI" HorizontalAlignment="Left" VerticalAlignment="Top" Width="95" Margin="101,324,0,0" Height="42" Click="Button_Click"/>
-        <Label Content="Adresa" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="408,75,0,0" Height="31" Width="95"/>
-        <ComboBox Name="cbAdrese" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Margin="503,75,0,0"/>
+        <Button Content="IZMENI" HorizontalAlignment="Left" VerticalAlignment="Top" Width="173" Margin="540,194,0,0" Height="130" Click="Button_Click"/>
+        <Label Content="Adresa" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="42,293,0,0" Height="31" Width="95"/>
+        <ComboBox Name="cbAdrese" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Margin="176,302,0,0"/>
     </Grid>
 </Window>

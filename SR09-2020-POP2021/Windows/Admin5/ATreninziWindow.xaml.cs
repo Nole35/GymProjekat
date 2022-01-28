@@ -13,6 +13,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using SR09_2020_POP2021.Model;
+using SR09_2020_POP2021.Windows.PocetniProzor;
 
 namespace SR09_2020_POP2021.Windows.Admin5
 {
@@ -40,17 +41,25 @@ namespace SR09_2020_POP2021.Windows.Admin5
 
         private void close(object sender, RoutedEventArgs e)
         {
-
+            FitnesCentarSajt fcs = new FitnesCentarSajt();
+            fcs.Show();
+            this.Close();
         }
 
         private void izmeni(object sender, RoutedEventArgs e)
         {
-
+            var selektovaniTrening = Informacije.SelectedItem;
+            Trening trening = (Trening)selektovaniTrening;
+            IzmenaATreninga iat = new IzmenaATreninga(trening);
+            iat.Show();
+            this.Close();
         }
 
         private void dodaj(object sender, RoutedEventArgs e)
         {
-
+            DodavanjeTreninga dt = new DodavanjeTreninga();
+            dt.Show();
+            this.Close();
         }
     }
 }

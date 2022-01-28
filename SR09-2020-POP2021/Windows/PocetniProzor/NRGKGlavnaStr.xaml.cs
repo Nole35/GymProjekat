@@ -42,5 +42,12 @@ namespace SR09_2020_POP2021.Windows.PocetniProzor
         {
 
         }
+
+        private void Button_Click_5(object sender, RoutedEventArgs e)
+        {
+            FitnesCentarSajt fcs = new FitnesCentarSajt();
+            fcs.Show();
+            this.Close();
+        }
     }
 }

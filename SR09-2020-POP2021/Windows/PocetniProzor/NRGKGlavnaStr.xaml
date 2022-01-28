@@ -6,9 +6,10 @@
         xmlns:local="clr-namespace:SR09_2020_POP2021.Windows.PocetniProzor"
         mc:Ignorable="d"
         Title="InfoFitnesCentraWindow" Height="450" Width="800">
-    <Grid Margin="0,0,345.6,0">
-        <Button Content="Lista instruktora" HorizontalAlignment="Left" Height="47" Margin="75,346,0,0" VerticalAlignment="Top" Width="225" Click="Button_Click"/>
-        <DataGrid Name="OFitnesCentru" HorizontalAlignment="Left" Height="63" VerticalAlignment="Top" Width="390" Margin="36,114,0,0"/>
+    <Grid Margin="0,0,3.6,28">
+        <Button Content="Lista instruktora" HorizontalAlignment="Left" Height="47" Margin="269,261,0,0" VerticalAlignment="Top" Width="225" Click="Button_Click"/>
+        <DataGrid Name="OFitnesCentru" HorizontalAlignment="Left" Height="165" VerticalAlignment="Top" Width="390" Margin="203,64,0,0"/>
+        <Button Content="ZATVORI" HorizontalAlignment="Left" Height="40" Margin="627,352,0,0" VerticalAlignment="Top" Width="163" Click="Button_Click_5"/>
 
     </Grid>
 </Window>

@@ -7,8 +7,8 @@
         mc:Ignorable="d"
          Title="InstruktorWindow" Height="450" Width="800">
     <Grid>
-        <Button Click="pregledPolaznika" Content="PREGLED POLAZNIKA" HorizontalAlignment="Left" Height="79" Margin="301,75,0,0" VerticalAlignment="Top" Width="186"/>
-        <Button Click="pregledTreninga" Content="PREGLED TRENINGA" HorizontalAlignment="Left" Height="79" Margin="301,310,0,0" VerticalAlignment="Top" Width="186"/>
-        <Button Click="pregledPodataka" Content="PREGLED PODATAKA" HorizontalAlignment="Left" Height="79" Margin="301,185,0,0" VerticalAlignment="Top" Width="186"/>
+       <Button Click="pregledPodataka" Content="PREGLED PODATAKA" HorizontalAlignment="Left" Height="79" Margin="301,185,0,0" VerticalAlignment="Top" Width="186"/>
+        <Button Content="ODJAVA" HorizontalAlignment="Left" Height="64" Margin="501,0,0,0" VerticalAlignment="Top" Width="283" Click="Button_Click"/>
+
     </Grid>
 </Window>

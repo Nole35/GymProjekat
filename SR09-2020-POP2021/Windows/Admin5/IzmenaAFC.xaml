@@ -6,9 +6,13 @@
         xmlns:local="clr-namespace:SR09_2020_POP2021.Windows.Admin5"
         mc:Ignorable="d"
         Title="IzmenaAFC" Height="450" Width="800">
-    <Grid>
-        <Label Content="Naziv" HorizontalAlignment="Left" VerticalAlignment="Top" Height="41" Width="133" Margin="157,162,0,0" RenderTransformOrigin="0.571,2.813"/>
-        <TextBox Text="{Binding Path=Naziv}" Name="txtNaz" HorizontalAlignment="Left" Height="22" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="290,162,0,0"/>
-        <Button Content="IZMENI" HorizontalAlignment="Left" VerticalAlignment="Top" Width="95" Margin="334,349,0,0" Height="42" Click="Button_Click"/>
+    <Grid Margin="88,112,171.6,178">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="0*"/>
+        </Grid.ColumnDefinitions>
+        <Label Content="Naziv" HorizontalAlignment="Left" VerticalAlignment="Top" Height="41" Width="133" Margin="27,32,0,0" RenderTransformOrigin="0.571,2.813"/>
+        <TextBox Text="{Binding Path=Naziv}" Name="txtNaz" HorizontalAlignment="Left" Height="22" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="160,32,0,0"/>
+        <Button Content="IZMENI" HorizontalAlignment="Left" VerticalAlignment="Top" Width="95" Margin="420,24,0,0" Height="42" Click="Button_Click"/>
     </Grid>
 </Window>

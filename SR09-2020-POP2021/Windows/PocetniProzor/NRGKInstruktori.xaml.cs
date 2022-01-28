@@ -35,7 +35,7 @@ namespace SR09_2020_POP2021.Windows.PocetniProzor
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            FitnesCentarSajt fcs = new FitnesCentarSajt();
+            NRGKGlavnaStr fcs = new NRGKGlavnaStr();
             fcs.Show();
             this.Close();
         }

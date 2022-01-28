@@ -8,7 +8,7 @@
          Title="PregledPolaznika" Height="450" Width="800">
     <Grid>
         <DataGrid SelectedItem="{Binding Path=selektovan}" Name="svojiPodaci" HorizontalAlignment="Left" Height="132" VerticalAlignment="Top" Width="577" Margin="80,99,0,0"/>
-        <Button Content="IZMENI" HorizontalAlignment="Left" Margin="197,306,0,0" VerticalAlignment="Top" Width="107" Height="44" Click="Button_Click"/>
+        <Button Content="IZMENI" HorizontalAlignment="Left" Margin="307,327,0,0" VerticalAlignment="Top" Width="107" Height="44" Click="Button_Click"/>
 
     </Grid>
 </Window>

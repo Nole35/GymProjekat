@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using SR09_2020_POP2021.Model;
+using SR09_2020_POP2021.Windows.PocetniProzor;
 
 namespace SR09_2020_POP2021.Windows.Admin5
 {
@@ -44,7 +45,9 @@ namespace SR09_2020_POP2021.Windows.Admin5
 
         private void close(object sender, RoutedEventArgs e)
         {
-
+            FitnesCentarSajt fcs = new FitnesCentarSajt();
+            fcs.Show();
+            this.Close();
         }
     }
 }
